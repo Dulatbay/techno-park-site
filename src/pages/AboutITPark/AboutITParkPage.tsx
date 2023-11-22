@@ -6,7 +6,10 @@ export const AboutITParkPage = () => {
     const imageUrl = 'public/image/cooperation.png'
     return (
         <>
-            <HeaderImage imageUrl={imageUrl}/>
+            <HeaderImage imageUrl={imageUrl}
+                         title={"SDU IT Park"}
+                         description={"SDU IT Park - товарищество с ограниченной ответственностью, единственным учредителем которого является университет СДУ."}
+            />
             <div className='main'>
                 <div className='course'>
                     <div className='text'>
