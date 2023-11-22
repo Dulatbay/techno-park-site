@@ -1,10 +1,14 @@
+// import React from 'react';
+import OFE from './Pages/OFE';
 
 function App() {
     return (
         <>
-            test
+            <div className="App">
+                <OFE />
+            </div>
         </>
-    )
+    );
 }
 
-export default App
+export default App;
