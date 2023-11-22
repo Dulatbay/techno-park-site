@@ -5,11 +5,14 @@
 }
 
 .footer {
-    padding: 25px 0;
+    padding: 25px;
     color:#fff;
-    font-family: 'TildaSans', 'century Gothic', serif;
+    font-family:  'century Gothic';
     font-weight: bold;
     background-color: #052555;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
 }
 .social a{
