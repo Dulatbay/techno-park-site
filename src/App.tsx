@@ -1,8 +1,9 @@
+import {AboutITParkPage} from "./pages/AboutITPark/AboutITParkPage.tsx";
 
 function App() {
     return (
         <>
-            test
+            <AboutITParkPage />
         </>
     )
 }
