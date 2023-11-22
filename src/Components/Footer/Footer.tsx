@@ -5,7 +5,6 @@ function Footer() {
     // @ts-ignore
     return (
         <footer className={styles.footer} >
-
             <div className={styles.container}>
                 <div className="contacts">
                     <p>+7 727 307 95 65</p>
@@ -43,5 +42,4 @@ function Footer() {
 
     );
 }
-
 export default Footer;
