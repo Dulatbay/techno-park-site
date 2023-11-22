@@ -1,9 +1,10 @@
 // import Slider from '../Components/SliderPart/Slider';
-import AboutOFE from '../Components/About/AboutOFE';
-import Footer from '../Components/Footer/Footer';
-import OfficeActivity from '../Components/OfficeActivity/OfficeActivity';
-import OurGuests from '../Components/OurGuests/OurGuests';
-import Incubators from '../Components/Incubators/Incubators';
+
+import OfficeActivity from "../components/OfficeActivity/OfficeActivity.tsx";
+import OurGuests from "../components/OurGuests/OurGuests.tsx";
+import Incubators from "../components/Incubators/Incubators.tsx";
+// import Footer from "../components/Footer/Footer.tsx";
+import AboutOFE from "../components/About/AboutOFE.tsx";
 
 function OFE() {
     return (
@@ -13,7 +14,7 @@ function OFE() {
             <OfficeActivity />
             <OurGuests />
             <Incubators />
-            <Footer />
+            {/*<Footer />*/}
         </>
     );
 }
