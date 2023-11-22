@@ -3,10 +3,6 @@ body {
     margin: 0;
 }
 
-*{
-    color: white;
-}
-
 
 @font-face {
     font-family: 'TildaSans';
@@ -26,6 +22,7 @@ body {
     font-weight: 400;
 }
 
-*{
+* {
     font-family: 'TildaSans', serif;
+    color: white;
 }
