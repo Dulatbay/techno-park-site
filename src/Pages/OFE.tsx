@@ -1,4 +1,4 @@
-import Slider from '../Components/SliderPart/Slider';
+// import Slider from '../Components/SliderPart/Slider';
 import AboutOFE from '../Components/About/AboutOFE';
 import Footer from '../Components/Footer/Footer';
 import OfficeActivity from '../Components/OfficeActivity/OfficeActivity';
