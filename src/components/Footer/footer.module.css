@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "Tilda Sans";
+    font-style: normal;
+    font-weight: normal;
+}
+
 .footer {
     padding: 25px;
     color:#fff;
-    font-family: 'TildaSans','century Gothic', serif;
+    font-family:  'century Gothic';
     font-weight: bold;
     background-color: #052555;
     position: absolute;
