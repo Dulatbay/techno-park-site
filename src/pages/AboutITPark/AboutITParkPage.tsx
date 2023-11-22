@@ -1,10 +1,12 @@
 import Footer from "../../components/Cooperation/Cooperation.tsx";
-import HeaderTop from "../../components/HeaderTop/HeaderTop.tsx";
 import './AboutItPark.css'
+import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
+
 export const AboutITParkPage = () => {
+    const imageUrl = 'public/image/cooperation.png'
     return (
         <>
-            <HeaderTop/>
+            <HeaderImage imageUrl={imageUrl}/>
             <div className='main'>
                 <div className='course'>
                     <div className='text'>

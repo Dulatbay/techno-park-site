@@ -1,7 +1,7 @@
 import style from './HeaderTop.module.css'
 const HeaderTop = () => {
     return (
-        <div className={style.headerTop}>
+        <header className={style.headerTop}>
             <div className={style.leftHeader}>
                 <a href='#'>
                     <div className=''>
@@ -41,7 +41,7 @@ const HeaderTop = () => {
                     <span></span>
                 </div>
             </div>
-        </div>
+        </header>
     );
 }
 
