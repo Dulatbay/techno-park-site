@@ -1,4 +1,6 @@
 import style from './HeaderTop.module.css'
+import {Link} from "react-router-dom";
+
 const HeaderTop = () => {
     return (
         <header className={style.headerTop}>
@@ -14,8 +16,16 @@ const HeaderTop = () => {
                     <li className={style.links}>
                         <span>SDU IT Park</span>
                         <ul>
-                            <li><a href="#">О нас, IT Park</a></li>
-                            <li><a href="#">Проекты</a></li>
+                            <li>
+                                <Link to="/">
+                                    О нас, IT Park
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={'/it-park-projects'}>
+                                    Проекты
+                                </Link>
+                            </li>
                             <li><a href="#">Курсы</a></li>
                         </ul>
                     </li>
@@ -44,7 +54,6 @@ const HeaderTop = () => {
         </header>
     );
 }
-
 
 
 export default HeaderTop;

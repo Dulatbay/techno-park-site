@@ -3,12 +3,15 @@ import './AboutItPark.css'
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 
 export const AboutITParkPage = () => {
-    const imageUrl = 'public/image/cooperation.png'
+    console.log("created AboutITParkPage")
+    const imageUrl = 'public/image/about-it-park-page-header.jpg'
+    const title = "SDU IT Park"
+    const description = "SDU IT Park - товарищество с ограниченной ответственностью, единственным учредителем которого является университет СДУ.";
     return (
         <>
             <HeaderImage imageUrl={imageUrl}
-                         title={"SDU IT Park"}
-                         description={"SDU IT Park - товарищество с ограниченной ответственностью, единственным учредителем которого является университет СДУ."}
+                         title={title}
+                         description={description}
             />
             <div className='main'>
                 <div className='course'>
