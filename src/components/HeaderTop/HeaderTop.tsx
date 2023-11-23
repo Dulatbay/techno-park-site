@@ -16,19 +16,18 @@ function HeaderTop() {
                             <NavDropdown title="SDU IT Park" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/">О нас, IT Park</NavDropdown.Item>
                                 <NavDropdown.Item href="/it-park-projects">Проект</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Курсы</NavDropdown.Item>
+                                <NavDropdown.Item href="/cources">Курсы</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Технопарк" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">О нас, Технопарк</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Software</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Hardware</NavDropdown.Item>
+                                <NavDropdown.Item href="/about-techno-park">О нас, Технопарк</NavDropdown.Item>
+                                <NavDropdown.Item href="/software">Software</NavDropdown.Item>
+                                <NavDropdown.Item href="/hardware">Hardware</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Офис предпринимательства" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/office">О нас, ОП</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Enactus</NavDropdown.Item>
+                                <NavDropdown.Item href="/enactus">Enactus</NavDropdown.Item>
                             </NavDropdown>
-
-                            <Nav.Link href="#office">Новости</Nav.Link>
+                            <Nav.Link href="/news">Новости</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Nav>
