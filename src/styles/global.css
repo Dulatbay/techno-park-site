@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+
 @font-face {
     font-family: 'TildaSans';
     src: url("/public/font/TildaSans-Bold.ttf");
@@ -21,6 +22,7 @@ body {
     font-weight: 400;
 }
 
-*{
+* {
     font-family: 'TildaSans', serif;
+    color: white;
 }

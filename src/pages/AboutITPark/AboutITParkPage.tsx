@@ -1,10 +1,18 @@
 import Footer from "../../components/Cooperation/Cooperation.tsx";
-import HeaderTop from "../../components/HeaderTop/HeaderTop.tsx";
 import './AboutItPark.css'
+import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
+
 export const AboutITParkPage = () => {
+    console.log("created AboutITParkPage")
+    const imageUrl = 'public/image/about-it-park-page-header.jpg'
+    const title = "SDU IT Park"
+    const description = "SDU IT Park - товарищество с ограниченной ответственностью, единственным учредителем которого является университет СДУ.";
     return (
         <>
-            <HeaderTop/>
+            <HeaderImage imageUrl={imageUrl}
+                         title={title}
+                         description={description}
+            />
             <div className='main'>
                 <div className='course'>
                     <div className='text'>

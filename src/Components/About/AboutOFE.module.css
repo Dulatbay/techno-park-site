@@ -1,0 +1,11 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.aboutOFE__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0;
+}
