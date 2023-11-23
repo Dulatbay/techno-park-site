@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    z-index: -1;
+    z-index: 0;
 }
 
 .footer-top::before {
@@ -23,7 +23,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Используйте rgba для задания цвета с прозрачностью */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
