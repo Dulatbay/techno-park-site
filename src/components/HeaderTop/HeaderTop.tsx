@@ -1,50 +1,75 @@
-import style from './HeaderTop.module.css'
+import React, { useState, useEffect } from 'react';
+import style from './HeaderTop.module.css';
+
 const HeaderTop = () => {
-    return (
-        <div className={style.headerTop}>
-            <div className={style.leftHeader}>
-                <a href='#'>
-                    <div className=''>
-                        SDU Технопарк
-                    </div>
-                </a>
-            </div>
-            <div className={style.rightHeader}>
-                <ul className={style.menu}>
-                    <li className={style.links}>
-                        <span>SDU IT Park</span>
-                        <ul>
-                            <li><a href="#">О нас, IT Park</a></li>
-                            <li><a href="#">Проекты</a></li>
-                            <li><a href="#">Курсы</a></li>
-                        </ul>
-                    </li>
-                    <li className={style.links}>
-                        <span>Технопарк</span>
-                        <ul>
-                            <li><a href="#">О нас, Технопарк</a></li>
-                            <li><a href="#">Software</a></li>
-                            <li><a href="#">Hardware</a></li>
-                        </ul>
-                    </li>
-                    <li className={style.links}>
-                        <span>Офис предпринимательства</span>
-                        <ul>
-                            <li><a href="#">О нас, ОП</a></li>
-                            <li><a href="#">Enactus</a></li>
-                        </ul>
-                    </li>
-                    <li><a href='#'>Новости</a></li>
-                </ul>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-                <div className={style.burger}>
-                    <span></span>
-                </div>
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      closeMenu();
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return (
+    <div className={style.wrapper}>
+      <header className={style.header}>
+        <div className={style.container}>
+          <div className={style.header__body}>
+            <a href="" className={style.header__logo}>
+              SDU Технопарк
+            </a>
+            <div
+              className={`${style.header__burger} ${isMenuOpen ? style.active : ''}`}
+              onClick={handleToggleMenu}
+            >
+              <span></span>
             </div>
+            <div
+              className={`${style.header__menu} ${isMenuOpen ? style.active : ''}`}
+            >
+              <ul className={style.header__list}>
+              <li>
+                  <a href="" className={style.header__link}>
+                    SDU
+                  </a>
+                </li>
+                <li>
+                  <a href="" className={style.header__link}>
+                    Технопарк
+                  </a>
+                </li>
+                <li>
+                  <a href="" className={style.header__link}>
+                    Офис предпринимательства
+                  </a>
+                </li>
+                <li>
+                  <a href="" className={style.header__link}>
+                    Новости
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    );
-}
-
-
+      </header>
+    </div>
+  );
+};
 
 export default HeaderTop;

@@ -1,12 +1,11 @@
-
 .main {
     width: 100%;
-    /* height: 1110px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 100px 0;
+    margin-top: 70px;
 }
 
 
@@ -21,25 +20,27 @@
 }
 
 
-.text{
+.text {
     width: 50%;
     height: 100%;
     border: 1px solid #eee;
 }
 
-.text h1{
+.text h1 {
     color: rgba(5, 37, 85, 1);
     padding: 30px;
     font-weight: 500;
 }
-.text p{
+
+.text p {
     color: #052555;
     padding-left: 30px;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 200;
 }
 
-.projectImage, .courseImage {
+.projectImage,
+.courseImage {
     width: 50%;
     height: 100%;
     background-image: url(/public/image/mainProject.jpg);
@@ -48,3 +49,30 @@
     background-repeat: no-repeat;
 }
 
+@media (max-width: 1000px) {
+    .text {
+        height: 200px;
+    }
+
+    .text h1 {
+        font-size: 20px;
+        padding: 0 0 0 10px;
+    }
+
+    .text p {
+        padding: 0 0 0 10px;
+    }
+
+    .projectImage,
+    .courseImage {
+        height: 200px;
+    }
+
+    .course,
+    .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
