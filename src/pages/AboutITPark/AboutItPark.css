@@ -1,11 +1,11 @@
 .main {
     background: white;
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 0;
+    /*padding: 100px 0;*/
     margin-top: 70px;
 }
 
@@ -57,11 +57,11 @@
 
     .text h1 {
         font-size: 20px;
-        padding: 0 0 0 10px;
+        /*padding: 0 0 0 10px;*/
     }
 
     .text p {
-        padding: 0 0 0 10px;
+        /*padding: 0 0 0 10px;*/
     }
 
     .projectImage,

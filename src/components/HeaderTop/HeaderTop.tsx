@@ -1,75 +1,40 @@
-import React, { useState, useEffect } from 'react';
-import style from './HeaderTop.module.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import './HeaderTop.css'
 
-const HeaderTop = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+function HeaderTop() {
+    return (
+        <Navbar expand="lg" className="bg-body-tertiary">
+            <Container>
+                <Navbar.Brand href="#home">SDU Teхнопарк</Navbar.Brand>
+                <Nav>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <NavDropdown title="SDU IT Park" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">О нас, IT Park</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Проект</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Курсы</NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="Технопарк" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">О нас, Технопарк</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Software</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Hardware</NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="Офис предпринимательства" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">О нас, ОП</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Enactus</NavDropdown.Item>
+                            </NavDropdown>
 
-  const handleToggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
-
-  useEffect(() => {
-    const handleResize = () => {
-      closeMenu();
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  return (
-    <div className={style.wrapper}>
-      <header className={style.header}>
-        <div className={style.container}>
-          <div className={style.header__body}>
-            <a href="" className={style.header__logo}>
-              SDU Технопарк
-            </a>
-            <div
-              className={`${style.header__burger} ${isMenuOpen ? style.active : ''}`}
-              onClick={handleToggleMenu}
-            >
-              <span></span>
-            </div>
-            <div
-              className={`${style.header__menu} ${isMenuOpen ? style.active : ''}`}
-            >
-              <ul className={style.header__list}>
-              <li>
-                  <a href="" className={style.header__link}>
-                    SDU
-                  </a>
-                </li>
-                <li>
-                  <a href="" className={style.header__link}>
-                    Технопарк
-                  </a>
-                </li>
-                <li>
-                  <a href="" className={style.header__link}>
-                    Офис предпринимательства
-                  </a>
-                </li>
-                <li>
-                  <a href="" className={style.header__link}>
-                    Новости
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
-  );
-};
+                            <Nav.Link href="#office">Новости</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Nav>
+            </Container>
+        </Navbar>
+    );
+}
 
 export default HeaderTop;

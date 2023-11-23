@@ -1,4 +1,4 @@
-import Footer from "../../components/Cooperation/Cooperation.tsx";
+import Footer from "../../components/Corporation/Corporation.tsx";
 import './AboutItPark.css'
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 
