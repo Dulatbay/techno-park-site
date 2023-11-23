@@ -14,19 +14,19 @@ export const AboutITParkPage = () => {
                          description={description}
             />
             <div className='main'>
-                <div className='course'>
-                    <div className='text'>
+                <div className='courses'>
+                    <div className='text-courses'>
                         <h1>Курсы</h1>
                         <p>Курсы от SDU IT Park</p>
                     </div>
-                    <div className='courseImage'></div>
+                    <div className='coursesImage'></div>
                 </div>
-                <div className='project'>
-                    <div className='text'>
+                <div className='projects'>
+                    <div className='text-projects'>
                         <h1>Проекты</h1>
                         <p>Проекты выполненные в рамках SDU IT Park</p>
                     </div>
-                    <div className='projectImage'></div>
+                    <div className='projectsImage'></div>
                 </div>
             </div>
             <Footer/>
