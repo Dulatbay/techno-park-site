@@ -1,10 +1,10 @@
-main{
+.projects-page main {
     width: 100%;
     background: #fff;
     padding: 135px 0;
 }
 
-.content{
+.projects-page main .content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,12 +16,12 @@ main{
 }
 
 
-.content-title{
+.projects-page main .content-title {
     color: #000;
 }
 
 
-.project-list{
+.projects-page main .project-list {
     display: flex;
     gap: 50px;
 }

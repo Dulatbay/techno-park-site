@@ -8,7 +8,7 @@ export const ProjectsPage = () => {
     const description = "Коммерческие проекты заказанные у SDU IT Park.";
 
     return (
-        <>
+        <div className={"projects-page"}>
             <HeaderImage imageUrl={imageUrl} title={title} description={description} />
             <main>
                 <div className="content">
@@ -19,6 +19,6 @@ export const ProjectsPage = () => {
                     </div>
                 </div>
             </main>
-        </>
+        </div>
     );
 };

@@ -24,7 +24,17 @@ body {
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'TildaSans';
+    src: url("/public/font/TildaSans-Medium.ttf");
+    font-weight: 600;
+}
+
 * {
     font-family: 'TildaSans', serif;
-    color: white;
+    color: black;
+}
+
+footer * {
+    color: white !important;
 }

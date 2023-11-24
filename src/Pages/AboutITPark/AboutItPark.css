@@ -1,0 +1,20 @@
+.about-it-park-page main{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 70px 0;
+}
+
+.about-it-park-page main .card{
+    max-width: 1160px;
+    margin: auto;
+}
+
+
+
+
+
