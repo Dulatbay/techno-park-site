@@ -13,7 +13,8 @@ export const AboutITParkPage = () => {
                          title={title}
                          description={description}
             />
-            <div className='main'>
+
+            <div className='main' id={'main'}>
                 <div className='course'>
                     <div className='text'>
                         <h1>Курсы</h1>

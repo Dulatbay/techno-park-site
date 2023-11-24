@@ -40,7 +40,7 @@ const HeaderTop = () => {
                     <li className={style.links}>
                         <span>Офис предпринимательства</span>
                         <ul>
-                            <li><a href="#">О нас, ОП</a></li>
+                            <li><Link to={'/ofe-page'}>О нас, ОП</Link></li>
                             <li><a href="#">Enactus</a></li>
                         </ul>
                     </li>

@@ -1,12 +1,16 @@
-import React, { useEffect, useRef } from 'react';
-import Splide from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
-
-import styles from './Slider.module.css'; // Import the CSS file
+import styles from './Slider.module.css';
 
 const Slider: React.FC = () => {
     return (
-            <>TEST</>
+        <>
+            <div className={`${styles.sliderPart}`}>
+                <div className={`${styles.container}`}>
+                    <div className={`${styles.sliderPart__inner}`}>
+                        TEST
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 

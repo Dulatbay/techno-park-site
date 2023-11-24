@@ -50,7 +50,6 @@ const OfficeActivity: React.FC = () => {
                             </div>
                             <div
                                 className={`${styles.card_text_2}`}
-                                style={{ color: '#052555' }}
                             >
                                 <p>
                                     а&#x29; Серия гостевых лекций от действующих
