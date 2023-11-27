@@ -1,4 +1,3 @@
-import Footer from "../../components/Cooperation/Cooperation.tsx";
 import './AboutItPark.css'
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 
@@ -30,7 +29,6 @@ export const AboutITParkPage = () => {
                     <div className='projectImage'></div>
                 </div>
             </div>
-            <Footer/>
         </>
     )
 };

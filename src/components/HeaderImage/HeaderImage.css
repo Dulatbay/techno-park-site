@@ -37,6 +37,10 @@
     max-width: 700px;
 }
 
+.parallax-content * {
+    color: white !important;
+}
+
 .parallax-content h1{
     font-size: 68px;
     font-weight: 600;

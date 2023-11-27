@@ -60,7 +60,7 @@
     color: rgb(5, 37, 85);
 }
 
-.card_text_2 p, span {
+.card_text_2 p span {
     font-size: 20px;
     line-height: 1.55;
     font-weight: 300;
