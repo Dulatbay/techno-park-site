@@ -1,39 +1,59 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './HeaderTop.css'
+import style from './HeaderTop.module.css'
+import {Link} from "react-router-dom";
 
-function HeaderTop() {
+const HeaderTop = () => {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
-            <Container>
-                <Navbar.Brand href="#home">SDU Teхнопарк</Navbar.Brand>
-                <Nav>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <NavDropdown title="SDU IT Park" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/">О нас, IT Park</NavDropdown.Item>
-                                <NavDropdown.Item href="/it-park-projects">Проект</NavDropdown.Item>
-                                <NavDropdown.Item href="/cources">Курсы</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="Технопарк" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/about-techno-park">О нас, Технопарк</NavDropdown.Item>
-                                <NavDropdown.Item href="/software">Software</NavDropdown.Item>
-                                <NavDropdown.Item href="/hardware">Hardware</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="Офис предпринимательства" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/office">О нас, ОП</NavDropdown.Item>
-                                <NavDropdown.Item href="/enactus">Enactus</NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link href="/news">Новости</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Nav>
-            </Container>
-        </Navbar>
+        <header className={style.headerTop}>
+            <div className={style.leftHeader}>
+                <a href='#'>
+                    <div className=''>
+                        SDU Технопарк
+                    </div>
+                </a>
+            </div>
+            <div className={style.rightHeader}>
+                <ul className={style.menu}>
+                    <li className={style.links}>
+                        <span>SDU IT Park</span>
+                        <ul>
+                            <li>
+                                <Link to="/">
+                                    О нас, IT Park
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={'/it-park-projects'}>
+                                    Проекты
+                                </Link>
+                            </li>
+                            <li><a href="#">Курсы</a></li>
+                        </ul>
+                    </li>
+                    <li className={style.links}>
+                        <span>Технопарк</span>
+                        <ul>
+                            <li><a href="#">О нас, Технопарк</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Hardware</a></li>
+                        </ul>
+                    </li>
+                    <li className={style.links}>
+                        <span>Офис предпринимательства</span>
+                        <ul>
+                            <li><Link to={'/ofe-page'}>О нас, ОП</Link></li>
+                            <li><a href="#">Enactus</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'>Новости</a></li>
+                </ul>
+
+                <div className={style.burger}>
+                    <span></span>
+                </div>
+            </div>
+        </header>
     );
 }
+
 
 export default HeaderTop;

@@ -45,6 +45,7 @@
     line-height: 1.35;
     font-weight: 600;
     text-align: center;
+    color: #052555;
 }
 
 .card__text_description {
@@ -53,6 +54,7 @@
     font-weight: 300;
     margin-top: 7px;
     text-align: center;
+    color: #052555;
 }
 
 .card__image_wrapper,

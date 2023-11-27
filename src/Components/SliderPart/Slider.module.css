@@ -1,16 +1,15 @@
-.slider {
+.sliderPart {
     width: 100%;
     height: auto;
-    background-color: aqua;
+    background-color: #052555;
 }
 
-.my_slider_progress {
-    background: #ccc;
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.my_slider_progress_bar {
-    background: greenyellow;
-    height: 2px;
-    transition: width 400ms ease;
-    width: 0;
+.sliderPart__inner {
+    font-size: 100px;
+    text-align: center;
 }
