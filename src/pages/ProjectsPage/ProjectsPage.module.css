@@ -2,8 +2,11 @@
 
 .projectsPage {
     width: 100%;
+}
+
+.projectsPage main {
     background: #fff;
-    padding: 135px 0;
+    padding: 130px 0;
 }
 
 .projectsPageContent {
