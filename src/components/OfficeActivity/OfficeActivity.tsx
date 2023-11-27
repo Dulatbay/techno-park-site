@@ -4,27 +4,39 @@ import styles from './OfficeActivity.module.css';
 const OfficeActivity: React.FC = () => {
     return (
         <div className={`${styles.office__activity}`}>
-            <div className={`${styles.container}`}>
-                <div className={`${styles.office__activity_inner}`}>
-                    <div className={`${styles.office__activity_title}`}>
-                        <div className={`${styles.title__span_1}`}>
+            <div className={`${styles.office__activity__container}`}>
+                <div className={`${styles.office__activity__inner}`}>
+                    <div className={`${styles.office__activity__title}`}>
+                        <div
+                            className={`${styles.office__activity__title__span_1}`}
+                        >
                             <span>Деятельность Офиса</span>
                         </div>
-                        <div className={`${styles.title__span_2}`}>
+                        <div
+                            className={`${styles.office__activity__title__span_2}`}
+                        >
                             <span>Направления</span>
                         </div>
                     </div>
 
-                    <div className={`${styles.office__activity_cards}`}>
-                        <div className={`${styles.card__line_wrapper}`}>
-                            <div className={`${styles.card__line}`}></div>
+                    <div className={`${styles.office__activity__cards}`}>
+                        <div
+                            className={`${styles.office__activity__card__line_wrapper}`}
+                        >
+                            <div
+                                className={`${styles.office__activity__card__line}`}
+                            ></div>
                         </div>
 
-                        <div className={`${styles.office__activity_card}`}>
-                            <div className={`${styles.card_text_1}`}>
+                        <div className={`${styles.office__activity__card}`}>
+                            <div
+                                className={`${styles.office__activity__card__text_1}`}
+                            >
                                 <span>В рамках учебной программы</span>
                             </div>
-                            <div className={`${styles.card_text_2}`}>
+                            <div
+                                className={`${styles.office__activity__card__text_2}`}
+                            >
                                 <span>
                                     Содействие курсам по предпринимательству на
                                     факультетах СДУ в дополнение к уже
@@ -40,16 +52,22 @@ const OfficeActivity: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className={`${styles.card__line_wrapper}`}>
-                            <div className={`${styles.card__line}`}></div>
+                        <div
+                            className={`${styles.office__activity__card__line_wrapper}`}
+                        >
+                            <div
+                                className={`${styles.office__activity__card__line}`}
+                            ></div>
                         </div>
 
-                        <div className={`${styles.office__activity_card}`}>
-                            <div className={`${styles.card_text_1}`}>
+                        <div className={`${styles.office__activity__card}`}>
+                            <div
+                                className={`${styles.office__activity__card__text_1}`}
+                            >
                                 <span>Дополнительные меры поддержки</span>
                             </div>
                             <div
-                                className={`${styles.card_text_2}`}
+                                className={`${styles.office__activity__card__text_2}`}
                             >
                                 <p>
                                     а&#x29; Серия гостевых лекций от действующих
@@ -97,8 +115,12 @@ const OfficeActivity: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="card__line_wrapper">
-                            <div className={`${styles.card__line}`}></div>
+                        <div
+                            className={`${styles.office__activity__card__line_wrapper}`}
+                        >
+                            <div
+                                className={`${styles.office__activity__card__line}`}
+                            ></div>
                         </div>
                     </div>
                 </div>

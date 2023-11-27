@@ -1,0 +1,21 @@
+/* CarouselComponent.css */
+
+/* Custom styles for the carousel caption */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #ffffff; /* White text color */
+    padding: 20px; /* Padding around the caption */
+}
+
+/* Custom styles for the carousel image */
+.carousel-item img {
+    max-height: 400px; /* Set a maximum height for the carousel images */
+    width: 100%; /* Make the images fill the entire width of the carousel */
+}
+
+.carousel__component {
+    background-color: #052555;
+    width: 100%;
+    height: auto;
+}
+
