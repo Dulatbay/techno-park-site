@@ -30,11 +30,10 @@
 
 .parallax-content {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    max-width: 700px;
 }
 
 .parallax-content * {
@@ -43,11 +42,13 @@
 
 .parallax-content h1{
     font-size: 68px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .parallax-content p{
     font-size: 24px;
     font-weight: 300;
+    max-width: 700px;
+    margin: auto;
 }
 
 .scroll-arrow-wrapper {
