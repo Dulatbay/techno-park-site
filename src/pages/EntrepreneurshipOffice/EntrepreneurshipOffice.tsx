@@ -13,6 +13,7 @@ function EntrepreneurshipOffice() {
 
     return (
         <>
+
             <HeaderImage imageUrl={imageUrl} title={title} description={description}/>
             <div className={"bg-white pt-xxl-5 pb-xxl-5"}>
                 <AboutOFE/>
