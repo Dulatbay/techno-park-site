@@ -1,6 +1,6 @@
-/* Corporation Top */
+/* Corporation.module.css */
 
-.footer-top {
+.footerTop {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -15,7 +15,7 @@
     z-index: 0;
 }
 
-.footer-top::before {
+.footerTop::before {
     content: "";
     position: absolute;
     top: 0;
@@ -25,54 +25,55 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.footer-top-content{
+.footerTopContent {
     text-align: center;
-
     z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 18px;
-
     max-width: 750px;
 }
 
-.footer-top-content p{
+.footerTopContent p {
     font-size: 18px;
+    color: white;
 }
-.footer-top-content h1{
+
+.footerTopContent h1 {
+    color: white;
     font-size: 35px;
     font-weight: 600;
 }
 
-.footer-top-input{
+.footerTopInput {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     gap: 15px;
     width: 560px;
 }
+
 @media (max-width: 600px) {
-    .footer-top-input{
+    .footerTopInput {
         width: 400px;
     }
 }
 
 @media (max-width: 400px) {
-    .footer-top-input{
+    .footerTopInput {
         width: 270px;
     }
 }
 
 @media (max-width: 300px) {
-    .footer-top-input{
+    .footerTopInput {
         width: 270px;
     }
 }
 
-
-.btn-primary{
+.btnPrimary {
     --bs-btn-bg: #052555FF !important;
     --bs-btn-border-color: #052555FF !important;
 }
