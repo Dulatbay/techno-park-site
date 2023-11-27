@@ -46,7 +46,30 @@
     margin: 0 auto;
 }
 
-.office__activity__card__line {
+.card_text_1 {
+    width: 260px;
+}
+
+.card_text_1 span {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: rgb(5, 37, 85);
+}
+
+.card_text_2 p span {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: rgb(5, 37, 85);
+}
+
+.card_text_2 {
+    text-align: left;
+    width: 760px;
+}
+
+.card__line {
     width: 1060px;
     height: 1px;
     background-color: #052555;

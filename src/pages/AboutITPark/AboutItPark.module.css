@@ -1,50 +1,58 @@
+/* AboutItParkPage.module.css */
+
 .main {
     background: white;
     width: 100%;
-    /* height: 1110px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 100px 0;
 }
-
-
 
 .course,
 .project {
-    width: 60%;
-    height: 435px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
-
-.text{
-    width: 50%;
+.text {
+    flex: 1;
     height: 100%;
     border: 1px solid #eee;
 }
 
-.text h1{
+.text h1 {
     color: rgba(5, 37, 85, 1);
     padding: 30px;
     font-weight: 500;
 }
-.text p{
+
+.text p {
     color: #052555;
     padding-left: 30px;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 200;
 }
 
-.projectImage, .courseImage {
-    width: 50%;
-    height: 100%;
+.projectImage,
+.courseImage {
+    height: 435px;
+    flex: 1;
+    width: 100%;
     background-image: url(/public/image/mainProject.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.list {
+    padding: 5vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    width: 1300px;
+}

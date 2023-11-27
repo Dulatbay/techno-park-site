@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/Pages/OFE/OFE.tsx
 import AboutOFE from '../../Components/About/AboutOFE';
 import OfficeActivity from '../../Components/OfficeActivity/OfficeActivity';
 import OurGuests from '../../Components/OurGuests/OurGuests';
@@ -6,6 +7,16 @@ import { HeaderImage } from '../../components/HeaderImage/HeaderImage';
 import Slider from '../../Components/Slider/Slider';
 import Contacts from '../../Components/Contacts/Contacts';
 import styles from './OFE.module.css';
+=======
+import AboutOFE from '../../components/About/AboutOFE.tsx';
+import OfficeActivity from '../../components/OfficeActivity/OfficeActivity.tsx';
+import OurGuests from '../../components/OurGuests/OurGuests.tsx';
+import Incubators from '../../components/Incubators/Incubators.tsx';
+import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
+import Slider from "../../components/SliderPart/Slider.tsx";
+import Contacts from "../../components/Contacts/Contacts.tsx";
+import styles from "./OFE.module.css";
+>>>>>>> master:src/pages/OFE/OFE.tsx
 
 function OFE() {
     const imageUrl =

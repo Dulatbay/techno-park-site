@@ -34,8 +34,12 @@
     padding: 0;
 }
 
+<<<<<<< HEAD:src/Components/Contacts/Contacts.module.css
 .left_side__description p:first-child,
 span {
+=======
+.left_side_description p:first-child span {
+>>>>>>> master:src/components/Contacts/Contacts.module.css
     font-size: 20px;
     line-height: 1.55;
     color: #052555;
@@ -55,8 +59,13 @@ span {
     font-weight: 600;
 }
 
+<<<<<<< HEAD:src/Components/Contacts/Contacts.module.css
 .left_side__partners p,
 span {
+=======
+.left_side_partners p span {
+
+>>>>>>> master:src/components/Contacts/Contacts.module.css
 }
 
 .left_side__address {
