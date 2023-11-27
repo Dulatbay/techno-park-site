@@ -5,7 +5,7 @@ import {AssistantTraining} from "../../components/AssistantTraining/AssistantTra
 import {BecomePartOfTeam} from "../../components/BecomePartOfTeam/BecomePartOfTeam.tsx";
 import {Footer} from "../../components/Footer/Footer.tsx";
 export const Software = () => {
-    const headerImageUrl = 'public/image/projects-page-header.jpg'
+    const headerImageUrl = 'public/image/'
     const headerTitle = "Software"
     const headerDescription = "";
 

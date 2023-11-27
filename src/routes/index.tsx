@@ -4,6 +4,7 @@ import {MainLayout} from "../pages/MainLayout/MainLayout.tsx";
 import {AboutITParkPage} from "../pages/AboutITPark/AboutITParkPage.tsx";
 import {ProjectsPage} from "../pages/ProjectsPage/ProjectsPage.tsx";
 import {Software} from "../pages/Software/Software.tsx";
+import {Enactus} from "../pages/Enactus/Enactus.tsx";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: '/software',
                 element: <Software/>
+            },
+            {
+                path: '/enactus',
+                element: <Enactus/>
             }
 
         ]

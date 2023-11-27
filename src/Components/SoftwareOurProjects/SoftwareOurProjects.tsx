@@ -1,31 +1,5 @@
 import styles from './SoftwareOurProjects.module.css';
 
-// interface props {
-//     imageUrl: string,
-//     cardTitle: string,
-//     cardDescription: string,
-//     buttonContent: string
-// }
-
-// export const HeaderImage = ({imageUrl, title, description} : props) => {
-
-// export const SoftwareOurProjects = ({imageUrl, cardTitle, cardDescription, buttonContent} : props) : void => {
-//     return (
-//         <>
-//             <div className={`${styles.ourProjects}`}>
-//                 <h1>Наши проекты</h1>
-//                 <div className={`${styles.Content}`}>
-//                     <img src={imageUrl} />
-//                     <div>
-//                         <h2>{cardTitle}</h2>
-//                         <p>{cardDescription}</p>
-//                         <button>{buttonContent}</button>
-//                     </div>
-//                 </div>
-//             </div>
-//         </>
-//     );
-// }
 export const SoftwareOurProjects = () => {
     return (
         <div className={`${styles.ourProjects}`}>
