@@ -1,0 +1,26 @@
+/* ProjectsPage.module.css */
+
+.projectsPage {
+    width: 100%;
+    background: #fff;
+    padding: 135px 0;
+}
+
+.projectsPageContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 42px;
+    font-weight: 600;
+    gap: 50px;
+}
+
+.projectsPageContentTitle {
+    color: #000;
+}
+
+.projectList {
+    display: flex;
+    gap: 50px;
+}

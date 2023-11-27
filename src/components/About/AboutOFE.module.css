@@ -1,0 +1,37 @@
+.about_ofe {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    font-family: 'TildaSans', Arial, sans-serif;
+}
+
+.aboutOFE__title {
+    font-size: 48px;
+    line-height: 1.23;
+    font-weight: 600;
+    color: #052555;
+}
+
+.aboutOFE__paragraph{
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: #052555;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutOFE__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 90px;
+}
+
+.aboutOFE__left_side, .aboutOFE__right_side {
+    width: 560px;
+    height: auto;
+}
