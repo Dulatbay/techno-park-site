@@ -12,7 +12,10 @@
   "dependencies": {
     "bootstrap": "^5.3.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "bootstrap-icons": "^1.11.2",
+=======
+>>>>>>> 2e46686 (in front of classNames added their class name like className__container and so on, and updated css file using this changes)
 =======
 >>>>>>> 2e46686 (in front of classNames added their class name like className__container and so on, and updated css file using this changes)
     "localforage": "^1.10.0",

@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './HeaderImage.module.css'
 import styles from './HeaderImage.module.css';
+=======
+import './HeaderImage.css';
+import { useEffect } from 'react';
+>>>>>>> 2e46686 (in front of classNames added their class name like className__container and so on, and updated css file using this changes)
 =======
 import './HeaderImage.css';
 import { useEffect } from 'react';
@@ -13,6 +18,7 @@ interface props {
     description: string;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 export const HeaderImage = ({imageUrl, title, description}: props) => {
     // useEffect(() => {
@@ -42,6 +48,8 @@ export const HeaderImage = ({imageUrl, title, description}: props) => {
             <div className={styles.parallaxImage} style={{backgroundImage: `url(${imageUrl})`}}></div>
             <div className={styles.parallaxContent}>
 =======
+=======
+>>>>>>> 2e46686 (in front of classNames added their class name like className__container and so on, and updated css file using this changes)
 export const HeaderImage = ({ imageUrl, title, description }: props) => {
     useEffect(() => {
         const handleSmoothScroll = (e: Event) => {
