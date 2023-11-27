@@ -1,6 +1,5 @@
-import Footer from "../../components/Corporation/Corporation.tsx";
-import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 import Corporation from "../../components/Corporation/Corporation.tsx";
+import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 
 
 const getSection = (imageUrl : string,  title : string, description : string) => {
@@ -41,7 +40,6 @@ export const AboutITParkPage = () => {
                 }
             </main>
             <Corporation />
-            <Footer/>
         </div>
     )
 }

@@ -1,6 +1,7 @@
-import './HeaderImage.css'
-// import {useEffect} from "react";
+import './HeaderImage.module.css'
+import styles from './HeaderImage.module.css';
 
+// import {useEffect} from "react";
 interface props {
     imageUrl: string,
     title: string,
@@ -31,20 +32,16 @@ export const HeaderImage = ({imageUrl, title, description}: props) => {
     // }, []); // Empty dependency array ensures this effect runs once on mount
 
     return (
-        <div className="parallax-container">
-            <div className="parallax-image" style={{
-                backgroundImage: `url(${imageUrl})`,
-            }}>
-            </div>
-            <div className="parallax-content">
+        <div className={styles.parallaxContainer}>
+            <div className={styles.parallaxImage} style={{backgroundImage: `url(${imageUrl})`}}></div>
+            <div className={styles.parallaxContent}>
                 <h1>{title}</h1>
                 <p>{description}</p>
             </div>
-            {/*<div className="scroll-arrow-wrapper">*/}
-            {/*    <div className="scroll-arrow">*/}
-            {/*        <a href="#main">&#8595;</a>*/}
-            {/*    </div>*/}
+            {/*<div className={styles.scrollArrowWrapper}>*/}
+            {/*  <div className={styles.scrollArrow}>*/}
+            {/*    <a href="#main">&#8595;</a>*/}
+            {/*  </div>*/}
             {/*</div>*/}
-        </div>
-    );
+        </div>);
 };
