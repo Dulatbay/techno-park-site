@@ -4,8 +4,8 @@ import styles from './AboutOFE.module.css';
 const AboutOFE: React.FC = () => {
     return (
         <>
-            <div className={`${styles.about_ofe}`}>
-                <div className={`${styles.container}`}>
+            <div className={`${styles.aboutOFE}`}>
+                <div className={`${styles.aboutOFE__container}`}>
                     <div className={`${styles.aboutOFE__inner}`}>
                         <div className={`${styles.aboutOFE__left_side}`}>
                             <h2 className={`${styles.aboutOFE__title}`}>

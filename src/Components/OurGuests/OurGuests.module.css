@@ -4,13 +4,13 @@
     color: rgb(5, 37, 85);
 }
 
-.ourGuests__inner {
-    padding: 0 20px;
-}
-
-.container {
+.ourGuests__container {
     width: 1200px;
     margin: 0 auto;
+}
+
+.ourGuests__inner {
+    padding: 0 20px;
 }
 
 .ourGuests__title {
@@ -36,11 +36,17 @@
     height: auto;
 }
 
-.card__text_wrapper {
+.ourGuests__card__image_wrapper,
+.ourGuests__card__image_wrapper img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.ourGuests__card__text_wrapper {
     margin-top: 17px;
 }
 
-.card__text_name {
+.ourGuests__card__text_name {
     font-size: 20px;
     line-height: 1.35;
     font-weight: 600;
@@ -48,17 +54,11 @@
     color: #052555;
 }
 
-.card__text_description {
+.ourGuests__card__text_description {
     font-size: 14px;
     line-height: 1.55;
     font-weight: 300;
     margin-top: 7px;
     text-align: center;
     color: #052555;
-}
-
-.card__image_wrapper,
-.card__image_wrapper img {
-    max-width: 100%;
-    width: 100%;
 }

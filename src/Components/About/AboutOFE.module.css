@@ -1,4 +1,4 @@
-.about_ofe {
+.aboutOFE {
     width: 100%;
     height: auto;
     background: #fff;
@@ -12,14 +12,14 @@
     color: #052555;
 }
 
-.aboutOFE__paragraph{
+.aboutOFE__paragraph {
     font-size: 20px;
     line-height: 1.55;
     font-weight: 300;
     color: #052555;
 }
 
-.container {
+.aboutOFE__container {
     width: 1200px;
     margin: 0 auto;
 }
@@ -31,7 +31,8 @@
     padding-bottom: 90px;
 }
 
-.aboutOFE__left_side, .aboutOFE__right_side {
+.aboutOFE__left_side,
+.aboutOFE__right_side {
     width: 560px;
     height: auto;
 }

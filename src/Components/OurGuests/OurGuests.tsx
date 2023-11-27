@@ -4,7 +4,7 @@ function OurGuests() {
     return (
         <>
             <div className={`${styles.ourGuests}`}>
-                <div className={`${styles.container}`}>
+                <div className={`${styles.ourGuests__container}`}>
                     <div className={`${styles.ourGuests__inner}`}>
                         <div className={`${styles.ourGuests__title}`}>
                             <span>Наши гости</span>
@@ -14,7 +14,7 @@ function OurGuests() {
                             {/* Card 1: Askhat  */}
                             <div className={`${styles.ourGuests__card}`}>
                                 <div
-                                    className={`${styles.card__image_wrapper}`}
+                                    className={`${styles.ourGuests__card__image_wrapper}`}
                                 >
                                     <img
                                         src="https://thumb.tildacdn.com/tild3730-3063-4365-a236-623362303130/-/resize/360x/-/format/webp/image.png"
@@ -22,14 +22,14 @@ function OurGuests() {
                                     />
                                 </div>
 
-                                <div className={`${styles.card__text_wrapper}`}>
+                                <div className={`${styles.ourGuests__card__text_wrapper}`}>
                                     <div
-                                        className={`${styles.card__text_name}`}
+                                        className={`${styles.ourGuests__card__text_name}`}
                                     >
                                         Асхат Солтанов
                                     </div>
                                     <div
-                                        className={`${styles.card__text_description}`}
+                                        className={`${styles.ourGuests__card__text_description}`}
                                     >
                                         Основатель сети кондитерских Happy cake.
                                         Happy Сake начали свою работу в 2013
@@ -49,7 +49,7 @@ function OurGuests() {
                             {/* Card 2:  Zhasulan*/}
                             <div className={`${styles.ourGuests__card}`}>
                                 <div
-                                    className={`${styles.card__image_wrapper}`}
+                                    className={`${styles.ourGuests__card__image_wrapper}`}
                                 >
                                     <img
                                         src="https://thumb.tildacdn.com/tild6130-6637-4436-b833-653136346237/-/resize/432x/-/format/webp/image.png"
@@ -57,14 +57,14 @@ function OurGuests() {
                                     />
                                 </div>
 
-                                <div className={`${styles.card__text_wrapper}`}>
+                                <div className={`${styles.ourGuests__card__text_wrapper}`}>
                                     <div
-                                        className={`${styles.card__text_name}`}
+                                        className={`${styles.ourGuests__card__text_name}`}
                                     >
                                         Жасулан Лес
                                     </div>
                                     <div
-                                        className={`${styles.card__text_description}`}
+                                        className={`${styles.ourGuests__card__text_description}`}
                                     >
                                         Директор SDU store. На встрече спикер
                                         рассказал про зарождение идеи и ее
@@ -79,7 +79,7 @@ function OurGuests() {
                             {/* Card 3:  Dauren*/}
                             <div className={`${styles.ourGuests__card}`}>
                                 <div
-                                    className={`${styles.card__image_wrapper}`}
+                                    className={`${styles.ourGuests__card__image_wrapper}`}
                                 >
                                     <img
                                         src="https://thumb.tildacdn.com/tild3139-3132-4432-b634-623932353833/-/resize/360x/-/format/webp/image.png"
@@ -87,14 +87,14 @@ function OurGuests() {
                                     />
                                 </div>
 
-                                <div className={`${styles.card__text_wrapper}`}>
+                                <div className={`${styles.ourGuests__card__text_wrapper}`}>
                                     <div
-                                        className={`${styles.card__text_name}`}
+                                        className={`${styles.ourGuests__card__text_name}`}
                                     >
                                         Дәурен Мұратханұлы
                                     </div>
                                     <div
-                                        className={`${styles.card__text_description}`}
+                                        className={`${styles.ourGuests__card__text_description}`}
                                     >
                                         Основатель сети кофеен Urbo coffee
                                         рассказал про свой путь к созданию сети

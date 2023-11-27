@@ -3,7 +3,7 @@
     height: auto;
 }
 
-.container {
+.contacts__container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -23,43 +23,43 @@
     margin: auto; /* This will center the element horizontally */
 }
 
-.left_side_description {
+.left_side__description {
     margin-top: 35px;
     width: 100%;
     height: 100%;
 }
 
-.left_side_description p {
+.left_side__description p {
     margin: 0;
     padding: 0;
 }
 
-.left_side_description p:first-child, span {
+.left_side__description p:first-child,
+span {
     font-size: 20px;
     line-height: 1.55;
     color: #052555;
 }
 
-.left_side_description a {
+.left_side__description a {
     font-size: 20px;
     color: #ff8562;
     text-decoration: none;
     font-weight: 300;
 }
 
-.left_side_title span {
+.left_side__title span {
     font-size: 42px;
     line-height: 1.23;
     color: #052555;
     font-weight: 600;
 }
 
-.left_side_partners p, span {
-
+.left_side__partners p,
+span {
 }
 
-.left_side_address {
-
+.left_side__address {
 }
 
 .contacts__right_side {
@@ -70,9 +70,10 @@
     justify-content: flex-end;
 }
 
-.right_side_img {
+.right_side__img {
     margin-left: 100px;
-    background: url("../../../public/image/ofe_contact.png") center center / cover no-repeat;
+    background: url('../../../public/image/ofe_contact.png') center center /
+        cover no-repeat;
     width: 560px;
     height: 560px;
 }
