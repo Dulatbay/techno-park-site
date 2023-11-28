@@ -34,12 +34,21 @@
     padding: 0;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/components/Contacts/Contacts.module.css
 .left_side_description p:first-child span {
 =======
 .left_side__description p:first-child,
 span {
 >>>>>>> 2e46686 (in front of classNames added their class name like className__container and so on, and updated css file using this changes):src/Components/Contacts/Contacts.module.css
+=======
+<<<<<<< HEAD:src/Components/Contacts/Contacts.module.css
+.left_side__description p:first-child,
+span {
+=======
+.left_side_description p:first-child span {
+>>>>>>> master:src/components/Contacts/Contacts.module.css
+>>>>>>> 5ddc8a60c139d7975d54f28873a94d3590ad6bb3
     font-size: 20px;
     line-height: 1.55;
     color: #052555;
@@ -59,6 +68,7 @@ span {
     font-weight: 600;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/components/Contacts/Contacts.module.css
 .left_side_partners p span {
 
@@ -66,6 +76,15 @@ span {
 .left_side__partners p,
 span {
 >>>>>>> 2e46686 (in front of classNames added their class name like className__container and so on, and updated css file using this changes):src/Components/Contacts/Contacts.module.css
+=======
+<<<<<<< HEAD:src/Components/Contacts/Contacts.module.css
+.left_side__partners p,
+span {
+=======
+.left_side_partners p span {
+
+>>>>>>> master:src/components/Contacts/Contacts.module.css
+>>>>>>> 5ddc8a60c139d7975d54f28873a94d3590ad6bb3
 }
 
 .left_side__address {

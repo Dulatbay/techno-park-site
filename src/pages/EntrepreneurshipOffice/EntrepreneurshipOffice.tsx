@@ -1,7 +1,7 @@
 import AboutOFE from "../../components/About/AboutOFE.tsx";
 import OfficeActivity from "../../components/OfficeActivity/OfficeActivity.tsx";
 import OurGuests from "../../components/OurGuests/OurGuests.tsx";
-import Incubators from "../../components/Incubators/Incubators.tsx";
+import {Incubators} from "../../components/Incubators/Incubators.tsx";
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 
 const imageUrl = 'public/image/ofe-page-header.jpeg'
