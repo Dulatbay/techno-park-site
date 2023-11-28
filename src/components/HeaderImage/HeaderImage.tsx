@@ -20,6 +20,12 @@ interface props {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 5ddc8a60c139d7975d54f28873a94d3590ad6bb3
+>>>>>>> 9191b9a67fb3f80fc83c35e83cdb9002f200dcb6
 export const HeaderImage = ({imageUrl, title, description}: props) => {
     // useEffect(() => {
     //     const handleSmoothScroll = (e: Event) => {

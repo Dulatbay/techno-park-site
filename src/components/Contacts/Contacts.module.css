@@ -34,9 +34,8 @@
     padding: 0;
 }
 
-.left_side__description p:first-child,
-span {
-font-size: 20px;
+.left_side_description p:first-child span {
+    font-size: 20px;
     line-height: 1.55;
     color: #052555;
 }
@@ -53,6 +52,13 @@ font-size: 20px;
     line-height: 1.23;
     color: #052555;
     font-weight: 600;
+}
+
+
+.left_side_partners p span {
+}
+
+.left_side__address {
 }
 
 .contacts__right_side {
