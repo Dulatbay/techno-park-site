@@ -33,5 +33,4 @@ const HeaderTop = () => {
     );
 }
 
-
 export default HeaderTop;
