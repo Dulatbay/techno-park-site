@@ -1,10 +1,9 @@
-import Footer from "../../components/Corporation/Corporation.tsx";
-import './AboutItPark.css'
+import Corporation from "../../components/Corporation/Corporation.tsx";
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 
 
 const getSection = (imageUrl : string,  title : string, description : string) => {
-    return (<div className="card">
+    return (<div className="card w-75 m-auto">
         <div className="row g-0">
             <div className="col-md-6">
                 <img src={imageUrl} className="img-fluid rounded-start" alt="..."/>
@@ -27,12 +26,12 @@ export const AboutITParkPage = () => {
     const title = "SDU IT Park"
     const description = "SDU IT Park - товарищество с ограниченной ответственностью, единственным учредителем которого является университет СДУ.";
     return (
-        <div className={"about-it-park-page"}>
+        <div>
             <HeaderImage imageUrl={imageUrl}
                          title={title}
                          description={description}
             />
-            <main>
+            <main className={"bg-white p-5 d-flex flex-column justify-content-center align-items-center gap-5"}>
                 {
                     getSection("/public/image/mainCourse.jpg", "Курсы", "Курсы от SDU IT Park")
                 }
@@ -40,7 +39,7 @@ export const AboutITParkPage = () => {
                     getSection("/public/image/mainProject.jpg", "Проекты", "Проекты выполненные в рамках SDU IT Park")
                 }
             </main>
-            <Footer/>
+            <Corporation />
         </div>
     )
 }

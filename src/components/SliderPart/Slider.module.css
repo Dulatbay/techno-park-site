@@ -1,0 +1,15 @@
+.sliderPart {
+    width: 100%;
+    height: auto;
+    background-color: #052555;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sliderPart__inner {
+    font-size: 100px;
+    text-align: center;
+}

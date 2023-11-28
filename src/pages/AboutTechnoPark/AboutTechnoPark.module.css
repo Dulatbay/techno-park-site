@@ -1,0 +1,39 @@
+.aboutTechnoParkPage .main * {
+    color: black !important;
+}
+
+.main{
+    background: white;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: grid;
+    place-items: center;
+}
+
+.content1 {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 1200px;
+}
+
+.content1Left{
+    flex: 1;
+}
+
+.content1Right{
+    flex: 1;
+    position: relative;
+}
+
+.content1Right_image1{
+    background-image: url("/public/image/about-techno-park-sec1-image1.jpg");
+    background-size: cover;
+}
+.content1Right_image2{
+    position: absolute;
+    background: red;
+    bottom: -20%;
+}
