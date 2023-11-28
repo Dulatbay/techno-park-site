@@ -3,6 +3,7 @@ import EntrepreneurshipOffice from "../pages/EntrepreneurshipOffice/Entrepreneur
 import {AboutITParkPage} from "../pages/AboutITPark/AboutITParkPage.tsx";
 import {ProjectsPage} from "../pages/ProjectsPage/ProjectsPage.tsx";
 import {MainLayout} from '../pages/MainLayout/MainLayout.tsx';
+import {AboutTechnoParkPage} from "../pages/AboutTechnoPark/AboutTechnoParkPage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path: '/office',
                 element: <EntrepreneurshipOffice />,
+            },
+            {
+                path: '/about-techno-park',
+                element: <AboutTechnoParkPage />,
             }
         ]
     },
