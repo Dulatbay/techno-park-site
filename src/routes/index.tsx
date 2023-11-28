@@ -3,7 +3,6 @@ import EntrepreneurshipOffice from "../pages/EntrepreneurshipOffice/Entrepreneur
 import {AboutITParkPage} from "../pages/AboutITPark/AboutITParkPage.tsx";
 import {ProjectsPage} from "../pages/ProjectsPage/ProjectsPage.tsx";
 import {Software} from "../pages/Software/Software.tsx";
-import {Enactus} from "../pages/Enactus/Enactus.tsx";
 import {MainLayout} from '../pages/MainLayout/MainLayout.tsx';
 import {AboutTechnoParkPage} from "../pages/AboutTechnoPark/AboutTechnoParkPage.tsx";
 
@@ -28,10 +27,10 @@ const router = createBrowserRouter([
                 path: '/software',
                 element: <Software/>
             },
-            {
-                path: '/enactus',
-                element: <Enactus/>
-            },
+            // {
+            //     path: '/enactus',
+            //     element: <Enactus/>
+            // },
             {
                 path: '/about-techno-park',
                 element: <AboutTechnoParkPage />,
