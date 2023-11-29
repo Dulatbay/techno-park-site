@@ -4,36 +4,47 @@ export const AssistantTraining = () => {
     return (
         <div className={`${styles.assistantTraining}`}>
             <h1>Обучение ассистентов</h1>
-            <div>
+            <div className={`${styles.list}`}>
+
                 <div className={`${styles.frontend}`}>
-                    <img src={'public/image/assistant-training-frontend.png'}/>
+                    <div className={`${styles.imgContainer}`}>
+                        <img src={'public/image/assistant-training-frontend.png'}/>
+                    </div>
 
-                    <h3>Frontend</h3>
+                    <div className={`${styles.content}`}>
+                        <h3>Frontend</h3>
 
-                    <ul>
-                        <li>Git, HTML, CSS, Javascript - базовый курс</li>
-                        <li>Typescript, React, CI/CD, Testing - продвинутый курс</li>
-                    </ul>
+                        <ul>
+                            <li>Git, HTML, CSS, Javascript - базовый курс</li>
+                            <li>Typescript, React, CI/CD, Testing - продвинутый курс</li>
+                        </ul>
 
-                    <p>
-                        Работаем над проектами, участвуем в хакатонах и мероприятиях в Технопарке.
-                    </p>
+                        <p>
+                            Работаем над проектами, участвуем в хакатонах и мероприятиях в Технопарке.
+                        </p>
+                    </div>
                 </div>
+
                 <div className={`${styles.backend}`}>
-                    <img src={'public/image/assistant-training-backend.png'}/>
+                    <div className={`${styles.imgContainer}`}>
+                        <img src={'public/image/assistant-training-backend.png'}/>
+                    </div>
 
-                    <h3>Backend</h3>
+                    <div className={`${styles.content}`}>
+                        <h3>Backend</h3>
 
-                    <ul>
-                        <li>Python, Java (Spring, EE), Go</li>
-                        <li>Database, Rest Api</li>
-                    </ul>
+                        <ul>
+                            <li>Python, Java (Spring, EE), Go</li>
+                            <li>Database, Rest Api</li>
+                        </ul>
 
-                    <p>
-                        Работаем над проектами, участвуем в хакатонах и мероприятиях в Технопарке.
-                    </p>
+                        <p>
+                            Работаем над проектами, участвуем в хакатонах и мероприятиях в Технопарке.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     );
 }
+
