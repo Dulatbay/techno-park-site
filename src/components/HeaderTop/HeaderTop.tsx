@@ -1,7 +1,10 @@
-import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import './HeaderTop.css'
 
-const HeaderTop = () => {
+function HeaderTop() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
@@ -11,14 +14,14 @@ const HeaderTop = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <NavDropdown title="SDU IT Park" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/about-it-park">О нас, IT Park</NavDropdown.Item>
+                                <NavDropdown.Item href="/">О нас, IT Park</NavDropdown.Item>
                                 <NavDropdown.Item href="/it-park-projects">Проект</NavDropdown.Item>
                                 <NavDropdown.Item href="/cources">Курсы</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Технопарк" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/about-techno-park">О нас, Технопарк</NavDropdown.Item>
                                 <NavDropdown.Item href="/software">Software</NavDropdown.Item>
-                                <NavDropdown.Item href="/hardware">Hardware</NavDropdown.Item>
+                                <NavDropdown.Item href="/technopark/hardware">Hardware</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Офис предпринимательства" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/office">О нас, ОП</NavDropdown.Item>
@@ -32,6 +35,5 @@ const HeaderTop = () => {
         </Navbar>
     );
 }
-
 
 export default HeaderTop;
