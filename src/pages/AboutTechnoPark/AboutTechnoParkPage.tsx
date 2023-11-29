@@ -4,24 +4,54 @@ import styles from './AboutTechnoPark.module.css'
 const imageUrl = 'public/image/about-techno-park-page-header.jpg'
 const title = "ТЕХНОПАРК"
 const description = "Технопарк - это лаборатория прототипирования и научных исследований для одаренных студентов. Это пространство, где решаются актуальные проблемы, и база, где теория превращается в практические навыки. Мастерская, где знания и навыки передаются от старшего поколения новичкам уже с первого курса.";
+const getChronologyComponent = () => {
+    return (
+        <div className={styles.chronologyComponent}>
+            <div className="container d-flex gap-xxl-5">
+                <div style={{
+                    flex: 1,
+                    alignSelf: "end"
+                }}>
+                    <div className="h3">Хронология</div>
+                    <div className="text-secondary">
+                        <strong>2017</strong>
+                        <span> - открытие лаборатории IOT</span><br/>
+                        <strong>2018</strong>
+                        <span> - открытие практической мастерской электроники для студентов 40 кв.м</span><br/>
+                        <strong>2019</strong>
+                        <span> - расширение мастерской до 100 кв.м</span><br/>
+                        <strong>2020</strong>
+                        <span> - открытие Технопарка 200 кв.м</span><br/>
+                        <strong>2021</strong>
+                        <span> - расширение Технопарка до 600 кв.м</span>
+                    </div>
+                </div>
+                <div className="images" style={{
+                    flex: 1
+                }}>
+                    <div style={{
+                        backgroundImage: `url(/public/image/about-techno-park-sec1-image1.jpg)`,
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        width: "450px",
+                        height: "450px",
+                    }}></div>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 
 export const AboutTechnoParkPage = () => {
     return (
-        <div className={styles.aboutTechnoParkPage}>
+        <div>
             <HeaderImage imageUrl={imageUrl} title={title} description={description}/>
-            <div className={styles.main}>
-                <div className={styles.section}>
-                    <div className={styles.content1}>
-                        <div className={styles.content1Left}>
-                            ХРОНОЛОГИЯ
-                        </div>
-                        <div className={styles.content1Right}>
-                            <div className={styles.content1Right_image1}>image1</div>
-                            <div className={styles.content1Right_image2}>image2</div>
-                        </div>
-                    </div>
-                </div>
+            <div >
+                {
+                    getChronologyComponent()
+                }
             </div>
         </div>
     )
