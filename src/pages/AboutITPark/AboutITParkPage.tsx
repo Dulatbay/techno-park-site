@@ -2,22 +2,25 @@ import Corporation from "../../components/Corporation/Corporation.tsx";
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 
 
-const getSection = (imageUrl : string,  title : string, description : string) => {
-    return (<div className="card w-75 m-auto">
-        <div className="row g-0">
-            <div className="col-md-6">
-                <img src={imageUrl} className="img-fluid rounded-start" alt="..."/>
-            </div>
-            <div className="col-md-4">
-                <div className="card-body">
-                    <h5 className="card-title text-black">{title}</h5>
-                    <p className="card-text text-black">{description}</p>
-                    <p className="card-text"><small className="text-muted">Тут еще какой-то интересный текст</small>
-                    </p>
+const getSection = (imageUrl: string, title: string, description: string) => {
+    return (
+        <div className="card w-75 m-auto">
+            <div className="row g-0">
+                <div className="col-md-6">
+                    <img src={imageUrl} className="img-fluid rounded-start" alt="..."/>
+                </div>
+                <div className="col-md-4">
+                    <div className="card-body">
+                        <h5 className="card-title text-black">{title}</h5>
+                        <p className="card-text text-black">{description}</p>
+                        <p className="card-text"><small className="text-muted">Тут еще какой-то интересный текст</small>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>);
+
+    );
 }
 
 export const AboutITParkPage = () => {
@@ -39,7 +42,7 @@ export const AboutITParkPage = () => {
                     getSection("/public/image/mainProject.jpg", "Проекты", "Проекты выполненные в рамках SDU IT Park")
                 }
             </main>
-            <Corporation />
+            <Corporation/>
         </div>
     )
 }

@@ -8,9 +8,7 @@
 .becomePart img{
     width: 42%;
     height: 100vh;
-    /*background-image: url("https://thumb.tildacdn.com/tild6534-3031-4561-b663-333133346431/-/resize/800x1000/-/format/webp/IMG_7993.JPG");*/
-    background-position: center;
-    background-size: 10%;
+    object-fit: cover;
 }
 
 .inputInfo{
@@ -38,7 +36,7 @@
     height: 10%;
     border: none;
     border-bottom: 1px solid #052555;
-    margin-top: 10px;
+    padding-top: 10px;
     outline: none;
 }
 
@@ -109,23 +107,25 @@
         flex-direction: column;
         padding: 0 20px 20px 20px;
     }
+
     .inputInfo{
         width: 100%;
         height: 100vh;
         padding: 0;
     }
+    .inputInfo h1{
+        font-size: 30px;
+        width: 100%;
+        padding-top: 10px;
+    }
     .becomePart img{
         width: 100%;
-        height: 80vh;
-        background-size: 100%;
     }
 
     .input{
         width: 100%;
-        padding: 0;
     }
     .inputInfo textarea{
-        padding: 0;
         width: 100%;
     }
     .inputInfo button{

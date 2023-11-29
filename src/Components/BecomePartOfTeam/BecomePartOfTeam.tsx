@@ -9,8 +9,7 @@ interface props {
 export const BecomePartOfTeam = ({imageUrl, title, isRadio} : props) => {
     return (
         <div className={`${styles.becomePart}`}>
-            {/*<img alt='' src={imageUrl}/>*/}
-                <img alt={''} src={imageUrl}/>
+            <img alt={''} src={imageUrl}/>
             <div className={`${styles.inputInfo}`}>
                 <h1>{title}</h1>
                 <input className={`${styles.input}`} placeholder='Email'/>
