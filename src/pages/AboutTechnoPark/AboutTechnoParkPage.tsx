@@ -1,5 +1,6 @@
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 import styles from './AboutTechnoPark.module.css'
+import {OurOffice} from "../../components/OutOffice/OurOffice.tsx";
 
 const imageUrl = 'public/image/about-techno-park-page-header.jpg'
 const title = "ТЕХНОПАРК"
@@ -10,7 +11,8 @@ const getChronologyComponent = () => {
             <div className="container d-flex gap-xxl-5">
                 <div style={{
                     flex: 1,
-                    alignSelf: "end"
+                    alignSelf: "end",
+                    margin: "auto"
                 }}>
                     <div className="h3">Хронология</div>
                     <div className="text-secondary">
@@ -26,8 +28,11 @@ const getChronologyComponent = () => {
                         <span> - расширение Технопарка до 600 кв.м</span>
                     </div>
                 </div>
-                <div className="images" style={{
-                    flex: 1
+                <div style={{
+                    flex: 1,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "end"
                 }}>
                     <div style={{
                         backgroundImage: `url(/public/image/about-techno-park-sec1-image1.jpg)`,
@@ -48,10 +53,11 @@ export const AboutTechnoParkPage = () => {
     return (
         <div>
             <HeaderImage imageUrl={imageUrl} title={title} description={description}/>
-            <div >
+            <div className={styles.content}>
                 {
                     getChronologyComponent()
                 }
+                <OurOffice />
             </div>
         </div>
     )

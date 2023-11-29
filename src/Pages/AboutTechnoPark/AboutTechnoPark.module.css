@@ -2,6 +2,17 @@
     color: black;
 }
 
-.chronologyComponent {
+.chronologyComponent{
+    width: 1200px;
+}
+
+.content {
+    width: 100%;
     background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6vh 0;
+    gap: 20vh;
 }
