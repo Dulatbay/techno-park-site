@@ -14,6 +14,13 @@
     margin: 0 auto;
 }
 
+.card__line {
+    width: 1060px;
+    height: 1px;
+    background-color: #052555;
+    opacity: 0.1;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -70,13 +77,6 @@
 .card_text_2 {
     text-align: left;
     width: 760px;
-}
-
-.card__line {
-    width: 1060px;
-    height: 1px;
-    background-color: #052555;
-    opacity: 0.1;
 }
 
 .office__activity_cards {

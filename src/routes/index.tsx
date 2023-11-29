@@ -3,6 +3,7 @@ import EntrepreneurshipOffice from "../pages/EntrepreneurshipOffice/Entrepreneur
 import {AboutITParkPage} from "../pages/AboutITPark/AboutITParkPage.tsx";
 import {ProjectsPage} from "../pages/ProjectsPage/ProjectsPage.tsx";
 import {MainLayout} from '../pages/MainLayout/MainLayout.tsx';
+import {MainPage} from "../pages/MainPage/MainPage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
             {
                 path: '/about-it-park',
                 element: <AboutITParkPage />,
+            },
+            {
+                path: '/main',
+                element: <MainPage />,
             },
             {
                 path: '/it-park-projects',

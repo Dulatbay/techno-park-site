@@ -5,9 +5,9 @@ import Footer from "../../components/Footer/Footer.tsx";
 export const MainLayout = () => {
     return (
         <>
-            <HeaderTop />
-            <Outlet />
-            <Footer />
+            <HeaderTop/>
+            <Outlet/>
+            <Footer/>
         </>
     );
 };
