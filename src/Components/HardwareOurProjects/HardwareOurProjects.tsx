@@ -1,6 +1,4 @@
 import styles from './HardwareOurProjects.module.css'
-import React from "react";
-import {BecomePartOfTeamHardware} from "../BecomePartOfTeamHardware/BecomePartOfTeamHardware.tsx";
 
 export  const HardwareOurProjects=()=>{
 
@@ -43,7 +41,6 @@ export  const HardwareOurProjects=()=>{
                 <img src="/public/image/hardware-our-projects2.jpeg" alt=""/>
 
             </div>
-            <BecomePartOfTeamHardware imageUrl="/public/image/hardware-partOfTeam.jpg" title="Стань частью команды!"/>
         </div>
 
 
