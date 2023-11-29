@@ -3,10 +3,11 @@
 }
 
 .content{
+    font-size: calc(var(--index) / 1.4);
     display: flex;
     flex-direction: row;
-    height: 600px;
-    width: 1200px;
+    height: 80vh;
+    width: 80vw;
     align-items: center;
     justify-content: center;
     gap: 3vw;
@@ -17,29 +18,29 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 10px;
+    gap: calc(var(--index) / 1.5);
 }
 
 .titleImage {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex: 6;
+    width: calc(var(--index) * 30);
+    height: calc(var(--index) * 25);
 }
 
 .images{
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: calc(var(--index) / 5);
 }
 
 .image{
     cursor: pointer;
-    height: 60px;
-    width: 60px;
+    height: calc(var(--index) * 2);
+    width: calc(var(--index) * 2);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,6 +53,24 @@
 
 .title {
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--index);
 }
+
+@media (max-width: 1100px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+        flex: 1;
+    }
+    .right{
+        align-self: start;
+    }
+    .titleImage{
+        width: calc(var(--index) * 20);
+        height: calc(var(--index) * 15);
+    }
+}
+
 

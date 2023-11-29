@@ -2,10 +2,12 @@ import {createBrowserRouter} from "react-router-dom";
 import EntrepreneurshipOffice from "../pages/EntrepreneurshipOffice/EntrepreneurshipOffice.tsx";
 import {AboutITParkPage} from "../pages/AboutITPark/AboutITParkPage.tsx";
 import {ProjectsPage} from "../pages/ProjectsPage/ProjectsPage.tsx";
+import {Software} from "../pages/Software/Software.tsx";
 import {MainLayout} from '../pages/MainLayout/MainLayout.tsx';
 import {AboutTechnoParkPage} from "../pages/AboutTechnoPark/AboutTechnoParkPage.tsx";
-import {Homepage} from "../Pages/Home/HomePage.tsx";
-import {HardwarePage} from "../Pages/Hardware/HardwarePage.tsx";
+import {Enactus} from "../pages/Enactus/Enactus.tsx";
+import {Homepage} from "../pages/Home/HomePage.tsx";
+import {HardwarePage} from "../pages/Hardware/HardwarePage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -15,8 +17,6 @@ const router = createBrowserRouter([
             {
               path:'/',
               element:<Homepage/>
-
-
             },
             {
                 path: '/about-it-park',
@@ -33,6 +33,14 @@ const router = createBrowserRouter([
             {
                 path: '/office',
                 element: <EntrepreneurshipOffice />,
+            },
+            {
+                path: '/software',
+                element: <Software/>
+            },
+            {
+                path: '/enactus',
+                element: <Enactus/>
             },
             {
                 path: '/about-techno-park',
