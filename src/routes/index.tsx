@@ -5,6 +5,7 @@ import {ProjectsPage} from "../pages/ProjectsPage/ProjectsPage.tsx";
 import {Software} from "../pages/Software/Software.tsx";
 import {MainLayout} from '../pages/MainLayout/MainLayout.tsx';
 import {AboutTechnoParkPage} from "../pages/AboutTechnoPark/AboutTechnoParkPage.tsx";
+import {Courses} from "../pages/Courses/Courses.tsx";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
             {
                 path: '/about-techno-park',
                 element: <AboutTechnoParkPage />,
+            },
+            {
+                path: '/cources',
+                element: <Courses />,
             }
 
         ]

@@ -1,70 +1,42 @@
 import styles from './FAQ.module.css';
-import Button from 'react-bootstrap/Button';
-import Collapse from 'react-bootstrap/Collapse';
-import { useState } from 'react';
+import Accordion from 'react-bootstrap/Accordion';
 export const FAQ = () => {
-    const [open1, setOpen1] = useState(false);
-    const [open2, setOpen2] = useState(false);
-    const [open3, setOpen3] = useState(false);
-    const [open4, setOpen4] = useState(false);
 
     return (
         <div className={`${styles.faq}`}>
             <h1>FAQ</h1>
-            <Button
-                className={`${styles.button}`}
-                onClick={() => setOpen1(!open1)}
-                aria-controls="example-collapse-text"
-                aria-expanded={open1}
-            >
-                Требуется ли мне компьютер ?
-            </Button>
-            <Collapse in={open1}>
-                <div className={`${styles.text}`} >
-                    Bы выбираете программу обучения в режиме online –
-                    поэтому вам необходимо иметь компьютер, соответствующий
-                    техническим характеристикам проходимого курса.
-                </div>
-            </Collapse>
-            <Button
-                className={`${styles.button}`}
-                onClick={() => setOpen2(!open2)}
-                aria-controls="example-collapse-text"
-                aria-expanded={open2}
-            >
-                Сколько времени потребуется для обучения ?
-            </Button>
-            <Collapse in={open2}>
-                <div className={`${styles.text}`} >
-                    Продолжительность одного урока составляет 2 часа. Занятия проводятся 2 раза в неделю.
-                </div>
-            </Collapse>
-            <Button
-                className={`${styles.button}`}
-                onClick={() => setOpen3(!open3)}
-                aria-controls="example-collapse-text"
-                aria-expanded={open3}
-            >
-                Сколько времени потребуется для обучения ?
-            </Button>
-            <Collapse in={open3}>
-                <div className={`${styles.text}`} >
-                    Продолжительность одного урока составляет 2 часа. Занятия проводятся 2 раза в неделю.
-                </div>
-            </Collapse>
-            <Button
-                className={`${styles.button}`}
-                onClick={() => setOpen4(!open4)}
-                aria-controls="example-collapse-text"
-                aria-expanded={open4}
-            >
-                Сколько времени потребуется для обучения ?
-            </Button>
-            <Collapse in={open4}>
-                <div className={`${styles.text}`} >
-                    Продолжительность одного урока составляет 2 часа. Занятия проводятся 2 раза в неделю.
-                </div>
-            </Collapse>
+
+            <Accordion className={`${styles.according}`} defaultActiveKey="0">
+
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header>Требуется ли мне компьютер ?</Accordion.Header>
+                    <Accordion.Body>
+                        Bы выбираете программу обучения в режиме online – поэтому
+                        вам необходимо иметь компьютер, соответствующий
+                        техническим характеристикам проходимого курса.
+                    </Accordion.Body>
+                </Accordion.Item>
+
+
+                <Accordion.Item eventKey="1">
+                    <Accordion.Header>Сколько времени потребуется для обучения ?</Accordion.Header>
+                    <Accordion.Body>
+                        Продолжительность одного урока составляет 2 часа. Занятия проводятся 2 раза в неделю.
+                    </Accordion.Body>
+                </Accordion.Item>
+
+
+                <Accordion.Item eventKey="2">
+                    <Accordion.Header>Что мне нужно знать для участия на курсах ?</Accordion.Header>
+                    <Accordion.Body>
+                        Наши программы разработаны для новичков и продолжающих. Если у вас нет каких-либо предварительных знаний или опыта в программировании - ничего страшного.
+                    </Accordion.Body>
+                    <Accordion.Body>
+                        Мы поможем вам подобрать курс с учетом возраста, интересов и уровня подготовки.
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
+
         </div>
     );
 

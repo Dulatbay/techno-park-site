@@ -17,4 +17,4 @@ export const EnactusKazakhstan = () => {
             <img alt={''} src={'public/image/enactus-kazakhstan.png'} loading='lazy'/>
         </div>
     );
-}
+};
