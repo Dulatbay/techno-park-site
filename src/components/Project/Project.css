@@ -24,6 +24,7 @@
     position: absolute;
     bottom: 15px;
     left: 15px;
+    font-size: calc(var(--index) / .4);
     font-weight: 600;
     color: white !important;
 }
@@ -42,7 +43,7 @@
 
 .project-title {
     color: #000;
-    font-size: 18px;
     font-weight: 300;
+    font-size: calc(var(--index) / .6);
     align-self: flex-start;
 }

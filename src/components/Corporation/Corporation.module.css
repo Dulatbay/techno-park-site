@@ -37,12 +37,12 @@
 }
 
 .footerTopContent p {
-    font-size: calc(var(--index) / .6);
+    font-size: 16px;
     color: white;
 }
 
 .footerTopContent h1 {
-    font-size: calc(var(--index) / .4);
+    font-size: 34px;
     color: white;
     font-weight: 600;
 }
@@ -56,7 +56,7 @@
 }
 
 .footerTopInput input{
-    font-size: calc(var(--index) / .7);
+    font-size: 16px;
 }
 
 @media (max-width: 600px) {

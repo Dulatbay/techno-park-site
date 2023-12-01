@@ -1,9 +1,9 @@
-import Footer from "../../components/Corporation/Corporation.tsx";
 import './Home.module.css'
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 // @ts-ignore
 import React from "react";
 
+// @ts-ignore
 const getSectionTeam = (imageUrl : string,  name : string,job_title:string,mail:string, description : string) => {
     return (
         <div className="card mb-3" >
