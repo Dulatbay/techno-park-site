@@ -6,14 +6,14 @@
 }
 
 .aboutOFE__title {
-    font-size: calc(var(--index) / .8);
+    font-size: calc(var(--index) / .4);
     line-height: 1.23;
     font-weight: 600;
     color: #052555;
 }
 
 .aboutOFE__paragraph{
-    font-size: calc(var(--index) / 1.2);
+    font-size: calc(var(--index) / .6);
     line-height: 1.55;
     font-weight: 300;
     color: #052555;

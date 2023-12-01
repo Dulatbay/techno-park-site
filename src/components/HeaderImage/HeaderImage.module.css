@@ -12,7 +12,7 @@
 }
 
 .parallaxImage {
-    z-index: -2;
+    z-index: -1;
     position: sticky;
     top: 0;
     left: 0;
@@ -48,12 +48,12 @@
 
 .parallaxContent h1 {
     max-width: 80vw;
-    font-size: calc(var(--index) * 1.2);
+    font-size: calc(var(--index) / .4);
     font-weight: 700;
 }
 
 .parallaxContent p {
-    font-size: calc(var(--index) * .8);
+    font-size: calc(var(--index) / .7);
     font-weight: 300;
     max-width: 60vw;
     margin: auto;

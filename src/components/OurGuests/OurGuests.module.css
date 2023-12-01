@@ -20,7 +20,7 @@
 }
 
 .ourGuests__title span {
-    font-size: calc(var(--index) / 1.2);
+    font-size: calc(var(--index) / .4);
     line-height: 1.23;
     font-weight: 600;
 }
@@ -43,7 +43,7 @@
 }
 
 .card__text_name {
-    font-size: calc(var(--index) / .56);
+    font-size: calc(var(--index) / .4);
     line-height: 1.35;
     font-weight: 600;
     text-align: center;
@@ -51,7 +51,7 @@
 }
 
 .card__text_description {
-    font-size: calc(var(--index) / 1.2);
+    font-size: calc(var(--index) / .6);
     line-height: 1.55;
     font-weight: 300;
     margin-top: 1vh;
