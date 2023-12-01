@@ -10,6 +10,7 @@ import {Courses} from "../pages/Courses/Courses.tsx";
 import {Enactus} from "../pages/Enactus/Enactus.tsx";
 import {Homepage} from "../pages/Home/HomePage.tsx";
 import {HardwarePage} from "../pages/Hardware/HardwarePage.tsx";
+import {News} from "../pages/News/News.tsx";
 
 const router = createBrowserRouter([
     {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
             {
                 path: '/cources',
                 element: <Courses />,
+            },
+            {
+                path: '/news',
+                element: <News />,
             }
         ]
     },
