@@ -26,3 +26,138 @@
 .ourTeam__title__wrapper span {
     color: rgb(5, 37, 85);
 }
+
+.ourTeam__cards__wrapper {
+    width: 100%;
+    max-width: 1160px;
+}
+
+.ourTeam__cards__carousel_content {
+    overflow: visible;
+    position: relative;
+    margin: 0 auto;
+    max-width: 760px;
+    width: 100%;
+}
+
+.ourTeam__card__wrapper {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition: transform ease-in-out .3s;
+    transform: translate(0,0);
+    display: flex;
+    max-width: 3040px;
+}
+
+.ourTeam__card {
+    max-width: 760px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+}
+
+.ourTeam__card__box {
+    padding-right: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ourTeam__card__box__content {
+    border-radius: 4px;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.ourTeam__card__box__content__author {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.content__author_img {
+    margin-right: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content__author_img img {
+    width: 100px;
+    height: 100px;
+}
+
+.content__author_information_name {
+    color: #052555;
+    margin-bottom: 7px;
+    font-size: 26px;
+    line-height: 1.23;
+    font-weight: 600;
+}
+
+.content__author_information_description {
+    color: #052555;
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+}
+
+.content__author_information_description a {
+    color: #ff8562;
+    text-decoration: none;
+}
+
+.ourTeam__card__box__content__review__wrapper {
+    margin-top: 35px;
+}
+
+.ourTeam__card__box__content__review {
+    color: #052555;
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 300;
+}
+
+.ourTeam__card__box__content__dots__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 115px;
+    background-image: linear-gradient(0deg,#ffffff 40px,rgba(255,255,255,0) 110%);
+    pointer-events: none;
+    margin-top: auto;
+}
+
+.ourTeam__card__box__content__dots {
+    display: flex;
+    margin-bottom: 25px;
+    opacity: .5;
+}
+
+.ourTeam__card__box__content__dot {
+    width: 2px;
+    height: 2px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #000;
+    display: inline-block;
+}

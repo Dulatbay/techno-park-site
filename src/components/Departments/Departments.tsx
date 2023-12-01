@@ -50,7 +50,7 @@ export const Departments = () => {
                                 <div className={`${styles.departments__about__column_circle}`}></div>
                             </div>
 
-                            <div className={`${styles.departments__about__column}`}>
+                            <div className={`${styles.departments__about__column_last}`}>
                                 <div className={`${styles.departments__about__column_text}`}>
                                     <div className={`${styles.departments__about__column_text_title}`}>
                                         <strong>Офис предпринимательства</strong>
@@ -59,7 +59,7 @@ export const Departments = () => {
                                         <span>Департамент занимающийся развитием студенческих проектов в бизнес сфере, находится под Департаментом корпоративного развития</span>
                                     </div>
                                 </div>
-                                <div className={`${styles.departments__about__column_line}`}></div>
+                                <div className={`${styles.departments__about__column_line_last}`}></div>
                                 <div className={`${styles.departments__about__column_circle}`}></div>
                             </div>
                         </div>
