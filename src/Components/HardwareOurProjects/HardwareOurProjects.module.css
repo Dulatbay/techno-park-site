@@ -1,58 +1,66 @@
 
-.ourProjects{
+.ourProjects {
     width: 100%;
     height: 89%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10vh;
 
 }
-.ourProjects button{
+
+.ourProjects button {
 
     width: 250px;
-height: 45px;
-border: none;
--webkit-border-radius: 100px;
-background-color: #052555;
-color: #ffffff;
-font-family: 'TildaSans',Arial,sans-serif;
-font-size: 15px;
-font-weight: 600;
+    height: 45px;
+    border: none;
+    -webkit-border-radius: 100px;
+    background-color: #052555;
+    color: #ffffff;
+    font-family: 'TildaSans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-.ourProjects h3{
+.ourProjects h3 {
 
-        font-family: 'TildaSans',Arial,sans-serif;
-        font-weight: 600;
-        color: #052555;
+    font-family: 'TildaSans', Arial, sans-serif;
+    font-weight: 600;
+    color: #052555;
 
 
 }
-.ourProjects p{
+
+.ourProjects p {
 
 
-        width: 26vw;
-        font-size: 20px;
-        font-family: 'TildaSans',Arial,sans-serif;
-        font-weight: 300;
-        color: #052555;
+    width: 26vw;
+    font-size: 20px;
+    font-family: 'TildaSans', Arial, sans-serif;
+    font-weight: 300;
+    color: #052555;
 }
-.proj1{
-margin-bottom: 105px;
+
+.proj1 {
+    margin-bottom: 105px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
-.proj1 img{
 
-width: 650px;
-height: 450px;
+.proj1 img {
+    width: calc(var(--index) * 20);
+    height: calc(var(--index) * 15);
+    border-radius: 15px;
 }
-.container1{
-margin-left: 50px;
+
+.container1 {
+    margin-left: 50px;
 }
-.ourProjects h1{
+
+.ourProjects h1 {
     text-align: center;
     font-size: 45px;
     font-weight: 600;
@@ -60,30 +68,34 @@ margin-left: 50px;
     color: #052555;
     padding: 130px 0 40px 0;
 }
-.proj2{
-    margin-bottom: 105px;
+
+.proj2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 2vw;
+    margin-bottom: 25vh;
 }
-.proj2 img{
-margin-left: 25px;
-    width: 650px;
-    height: 450px;
+
+.proj2 img {
+    width: calc(var(--index) * 20);
+    height: calc(var(--index) * 15);
+    border-radius: 15px;
 }
-@media (max-width: 1000px){
-    .ourProjects{
+
+@media (max-width: 1000px) {
+    .ourProjects {
         flex-direction: column;
     }
 
-    .container1 div p{
+    .container1 div p {
         width: 100%;
         font-size: 14px;
 
     }
 
 
-    .ourProjects img{
+    .ourProjects img {
         margin-bottom: 30px;
     }
 }

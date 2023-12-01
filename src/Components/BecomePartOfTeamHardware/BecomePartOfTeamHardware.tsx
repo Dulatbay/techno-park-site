@@ -8,7 +8,9 @@ interface props {
 export const BecomePartOfTeamHardware = ({imageUrl, title} : props) => {
     return (
         <div className={`${styles.becomePart}`}>
-            <img alt={''} src={imageUrl}/>
+            <div className={styles.image} style={{
+                backgroundImage: `url(${imageUrl})`
+            }}></div>
             <div className={`${styles.inputInfo}`}>
                 <h1>{title}</h1>
                 <input className={`${styles.input}`} placeholder='Email'/>

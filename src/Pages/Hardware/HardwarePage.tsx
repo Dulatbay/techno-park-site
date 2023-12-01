@@ -1,7 +1,7 @@
 import styles from './Hardware.module.css';
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 import {HardwareOurProjects} from "../../components/HardwareOurProjects/HardwareOurProjects.tsx";
-import {BecomePartOfTeam} from "../../components/BecomePartOfTeam/BecomePartOfTeam.tsx";
+import {BecomePartOfTeamHardware} from "../../components/BecomePartOfTeamHardware/BecomePartOfTeamHardware.tsx";
 
 const headerImageUrl = '/public/image/hardware-page.jpg'
 const headerTitle = "HARDWARE"
@@ -13,7 +13,7 @@ export const HardwarePage = () => {
         <div className={styles.hardware_page}>
             <HeaderImage imageUrl={headerImageUrl} title={headerTitle} description={headerDescription}/>
             <HardwareOurProjects/>
-            <BecomePartOfTeam imageUrl="/public/image/hardware-partOfTeam.jpg" title="Стань частью команды!" isRadio={false}/>
+            <BecomePartOfTeamHardware imageUrl="/public/image/hardware-partOfTeam.jpg" title="Стань частью команды!"/>
         </div>
     );
 }

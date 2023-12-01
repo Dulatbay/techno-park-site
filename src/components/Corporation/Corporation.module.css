@@ -55,6 +55,10 @@
     width: 560px;
 }
 
+.footerTopInput input{
+    font-size: calc(var(--index) / 1.5);
+}
+
 @media (max-width: 600px) {
     .footerTopInput {
         width: 400px;

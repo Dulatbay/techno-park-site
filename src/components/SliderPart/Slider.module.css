@@ -1,15 +1,10 @@
-.sliderPart {
-    width: 100%;
-    height: auto;
-    background-color: #052555;
+.sliderPart div{
+    height: 80vh;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.sliderPart__inner {
-    font-size: 100px;
-    text-align: center;
+.image{
+    background-image: url("public/image/slider/4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

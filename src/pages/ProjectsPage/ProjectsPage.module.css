@@ -1,12 +1,7 @@
 /* ProjectsPage.module.css */
 
-.projectsPage {
-    width: 100%;
-}
-
 .projectsPage main {
     background: #fff;
-    padding: 130px 0;
 }
 
 .projectsPageContent {
@@ -14,9 +9,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 42px;
+    font-size: calc(var(--index));
+    max-width: 1200px;
+    padding: 0 1vw;
     font-weight: 600;
-    gap: 50px;
+    gap: calc(var(--index) * 2);
+    margin: auto;
 }
 
 .projectsPageContentTitle {
@@ -25,5 +23,10 @@
 
 .projectList {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: calc(var(--index));
+    flex-wrap: wrap;
+    margin: auto;
 }

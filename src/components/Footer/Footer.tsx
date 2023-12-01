@@ -1,6 +1,8 @@
+
+
 function Footer() {
     return (
-        <footer className="text-center text-lg-start text-muted bg-dark p-4">
+        <footer className={"text-center text-lg-start text-muted bg-dark p-4"}>
             <section className="">
                 <div className="container text-center text-md-start">
                     <div className="row">
@@ -9,8 +11,7 @@ function Footer() {
                                 <i className="fas fa-gem"></i>Techno Park
                             </h6>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eum eveniet incidunt nobis. Asperiores illo natus neque, numquam odio repellat!
-                            </p>
+                                Присоединяйтесь к нашему сообществу, чтобы быть в курсе последних новостей, обновлений и технологических трендов. Наша миссия – создавать инновационные IT-продукты, способствуя развитию цифрового мира. </p>
                         </div>
 
 

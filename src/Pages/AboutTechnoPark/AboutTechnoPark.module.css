@@ -35,7 +35,7 @@
         gap: 5vh;
     }
     .image{
-        width: calc(var(--index) * 25);
-        height: calc(var(--index) * 25);
+        /*width: calc(var(--index) * 20);*/
+        /*height: calc(var(--index) * 20);*/
     }
 }

@@ -4,15 +4,17 @@
     display: flex;
 }
 
-.becomePart img{
+.image{
     width: 82%;
     height: 100vh;
     /*background-image: url("https://thumb.tildacdn.com/tild6534-3031-4561-b663-333133346431/-/resize/800x1000/-/format/webp/IMG_7993.JPG");*/
     background-position: center;
-    background-size: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .inputInfo{
+    background: #fff;
     width: 58%;
     height: 100%;
     display: flex;
@@ -34,14 +36,12 @@
 
 .input{
     width: 90%;
-    height: 10%;
+    height: 50px;
     border: none;
     border-bottom: 1px solid #052555;
     margin-top: 10px;
     outline: none;
 }
-
-
 
 
 .radios label{

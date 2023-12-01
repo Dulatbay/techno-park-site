@@ -1,7 +1,5 @@
 import AboutOFE from "../../components/About/AboutOFE.tsx";
-import OfficeActivity from "../../components/OfficeActivity/OfficeActivity.tsx";
 import OurGuests from "../../components/OurGuests/OurGuests.tsx";
-import Incubators from "../../components/Incubators/Incubators.tsx";
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 
 const imageUrl = 'public/image/ofe-page-header.jpeg'
@@ -17,10 +15,10 @@ function EntrepreneurshipOffice() {
             <HeaderImage imageUrl={imageUrl} title={title} description={description}/>
             <div className={"bg-white pt-xxl-5 pb-xxl-5"}>
                 <AboutOFE/>
-                {/* <Slider /> */}
-                <OfficeActivity/>
                 <OurGuests/>
-                <Incubators/>
+                 {/*<Slider />*/}
+                {/*<OfficeActivity/>*/}
+                {/*<Incubators/>*/}
             </div>
         </>
     );
