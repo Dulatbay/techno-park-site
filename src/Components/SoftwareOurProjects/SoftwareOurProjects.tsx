@@ -4,7 +4,7 @@ export const SoftwareOurProjects = () => {
         <div className={`${styles.ourProjects}`}>
             <h1>Наши проекты</h1>
             <div className={`${styles.projectsContent}`}>
-                <img src={'public/image/software-our-projects.png'} />
+                <img alt={''} src={'public/image/software-our-projects.png'} />
                 <div>
                     <h3>UNT Informatics</h3>
                     <p>

@@ -4,7 +4,9 @@ import {AboutITParkPage} from "../pages/AboutITPark/AboutITParkPage.tsx";
 import {ProjectsPage} from "../pages/ProjectsPage/ProjectsPage.tsx";
 import {Software} from "../pages/Software/Software.tsx";
 import {MainLayout} from '../pages/MainLayout/MainLayout.tsx';
+import {MainPage} from "../pages/MainPage/MainPage.tsx";
 import {AboutTechnoParkPage} from "../pages/AboutTechnoPark/AboutTechnoParkPage.tsx";
+import {Courses} from "../pages/Courses/Courses.tsx";
 import {Enactus} from "../pages/Enactus/Enactus.tsx";
 import {Homepage} from "../pages/Home/HomePage.tsx";
 import {HardwarePage} from "../pages/Hardware/HardwarePage.tsx";
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: '/about-it-park',
                 element: <AboutITParkPage />,
+            },
+            {
+                path: '/main',
+                element: <MainPage />,
             },
             {
                 path: '/it-park-projects',
@@ -45,6 +51,10 @@ const router = createBrowserRouter([
             {
                 path: '/about-techno-park',
                 element: <AboutTechnoParkPage />,
+            },
+            {
+                path: '/cources',
+                element: <Courses />,
             }
         ]
     },
