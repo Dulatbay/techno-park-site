@@ -1,0 +1,100 @@
+.assistantTraining{
+    height: 100%    ;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.assistantTraining h1{
+    text-align: center;
+    color: #052555;
+    font-size: 36px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 700;
+    padding: 130px 0 80px 0;
+}
+
+.list{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.imgContainer{
+    margin: 0 0 10px 0;
+    padding: 0 0 58% 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgContainer img{
+    width: 94%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content h3{
+    padding-top: 20px;
+    font-size: 26px;
+    color: #052555;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 600;
+}
+
+.content ul{
+    padding-left: 20px;
+}
+
+.content ul li{
+    font-size: 18px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 300;
+    color: #052555;
+}
+
+.content p{
+    width: 90%;
+    font-size: 18px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 300;
+    color: #052555;
+}
+
+
+@media (max-width: 1000px){
+    .imgContainer{
+
+    }
+
+    .assistantTraining h1{
+        font-size: 28px;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+
+    .list{
+        width: 90%;
+    }
+
+    .content h3{
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .content ul li{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .content p{
+        width: 100%;
+        font-size: 14px;
+    }
+}
