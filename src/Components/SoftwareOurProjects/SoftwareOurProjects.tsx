@@ -1,5 +1,4 @@
 import styles from './SoftwareOurProjects.module.css';
-
 export const SoftwareOurProjects = () => {
     return (
         <div className={`${styles.ourProjects}`}>
@@ -15,7 +14,11 @@ export const SoftwareOurProjects = () => {
                     </p>
                     <button>Сайт проекта</button>
                 </div>
+
+
             </div>
+
+
         </div>
     );
 }

@@ -7,8 +7,8 @@ const title = "ТЕХНОПАРК"
 const description = "Технопарк - это лаборатория прототипирования и научных исследований для одаренных студентов. Это пространство, где решаются актуальные проблемы, и база, где теория превращается в практические навыки. Мастерская, где знания и навыки передаются от старшего поколения новичкам уже с первого курса.";
 const getChronologyComponent = () => {
     return (
-        <div className={styles.chronologyComponent}>
-            <div className="container d-flex gap-xxl-5">
+        <div>
+            <div className={styles.chronologyComponent}>
                 <div style={{
                     flex: 1,
                     alignSelf: "end",
@@ -34,14 +34,7 @@ const getChronologyComponent = () => {
                     alignItems: "center",
                     justifyContent: "end"
                 }}>
-                    <div style={{
-                        backgroundImage: `url(/public/image/about-techno-park-sec1-image1.jpg)`,
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        width: "450px",
-                        height: "450px",
-                    }}></div>
+                    <div className={styles.image}></div>
                 </div>
             </div>
         </div>

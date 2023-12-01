@@ -2,7 +2,6 @@ import styles from './OurOffice.module.css'
 import {useState} from "react";
 
 export const OurOffice = () => {
-    // how to make images change smoothly
     const [selectedIndex, setSelectedIndex] = useState(1)
     return (
         <div className={styles.content}>
@@ -22,9 +21,6 @@ export const OurOffice = () => {
                                  }}
                                  key={i}
                             >
-                                {
-                                    i
-                                }
                             </div>)
                     }
                 </div>
