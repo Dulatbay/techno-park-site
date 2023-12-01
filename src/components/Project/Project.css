@@ -1,14 +1,12 @@
-
-
 .project{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 2vh;
 
-    width: 560px;
-    height: 300px;
+    width: 550px;
+    height: 400px;
 }
 
 .project-image {
@@ -16,15 +14,17 @@
     background-image: url("/public/image/project-1.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 .project-image span{
     position: absolute;
     bottom: 15px;
-    left: 25px;
+    left: 15px;
+    font-size: calc(var(--index) / .4);
     font-weight: 600;
     color: white !important;
 }
@@ -43,7 +43,7 @@
 
 .project-title {
     color: #000;
-    font-size: 18px;
     font-weight: 300;
+    font-size: calc(var(--index) / .6);
     align-self: flex-start;
 }

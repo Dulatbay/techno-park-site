@@ -13,8 +13,6 @@ const getSection = (imageUrl: string, title: string, description: string) => {
                     <div className="card-body">
                         <h5 className="card-title text-black">{title}</h5>
                         <p className="card-text text-black">{description}</p>
-                        <p className="card-text"><small className="text-muted">Тут еще какой-то интересный текст</small>
-                        </p>
                     </div>
                 </div>
             </div>

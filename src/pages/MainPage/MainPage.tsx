@@ -45,7 +45,7 @@ export const MainPage = () => {
     ];
 
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    // @ts-ignore
     const [items, setItems] = useState<NewsArticle[]>([]);
     const [active, setActive] = useState(1);
     const [category, setCategory] = useState("all");

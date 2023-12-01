@@ -13,15 +13,15 @@
 
 .parallaxImage {
     z-index: -1;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
-    will-change: transform;
-    transform: translateZ(0);
+    /*will-change: transform;*/
+    /*transform: translateZ(0);*/
 }
 
 .parallaxImage::after {
@@ -48,44 +48,50 @@
 
 .parallaxContent h1 {
     max-width: 80vw;
-    font-size: calc(var(--index) * 2);
+    font-size: 34px;
     font-weight: 700;
 }
 
 .parallaxContent p {
-    font-size: calc(var(--index) * 1);
+    font-size: 18px;
     font-weight: 300;
     max-width: 60vw;
     margin: auto;
 }
 
-.scrollArrowWrapper {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 20px;
+@media only screen and (max-width: 600px) {
+    .parallaxContent p {
+        font-size: 16px;
+    }
 }
 
-.scrollArrow {
-    text-align: center;
-}
+/*.scrollArrowWrapper {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    padding-bottom: 20px;*/
+/*}*/
 
-.scrollArrow a {
-    display: inline-block;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    text-decoration: none;
-    color: #ffffff;
-    transition: background-color 0.3s, color 0.3s;
-}
+/*.scrollArrow {*/
+/*    text-align: center;*/
+/*}*/
 
-.scrollArrow a:hover {
-    background-color: #000;
-    color: #fff;
-}
+/*.scrollArrow a {*/
+/*    display: inline-block;*/
+/*    padding: 10px;*/
+/*    border: 2px solid #000;*/
+/*    border-radius: 50%;*/
+/*    text-decoration: none;*/
+/*    color: #ffffff;*/
+/*    transition: background-color 0.3s, color 0.3s;*/
+/*}*/
+
+/*.scrollArrow a:hover {*/
+/*    background-color: #000;*/
+/*    color: #fff;*/
+/*}*/

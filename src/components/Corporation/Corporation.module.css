@@ -37,13 +37,13 @@
 }
 
 .footerTopContent p {
-    font-size: 18px;
+    font-size: 16px;
     color: white;
 }
 
 .footerTopContent h1 {
+    font-size: 34px;
     color: white;
-    font-size: 35px;
     font-weight: 600;
 }
 
@@ -53,6 +53,10 @@
     justify-content: stretch;
     gap: 15px;
     width: 560px;
+}
+
+.footerTopInput input{
+    font-size: 16px;
 }
 
 @media (max-width: 600px) {

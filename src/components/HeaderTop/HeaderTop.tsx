@@ -14,8 +14,8 @@ function HeaderTop() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <NavDropdown title="SDU IT Park" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/">О нас, IT Park</NavDropdown.Item>
-                                <NavDropdown.Item href="/it-park-projects">Проект</NavDropdown.Item>
+                                <NavDropdown.Item href="/about-it-park">О нас, IT Park</NavDropdown.Item>
+                                <NavDropdown.Item href="/it-park-projects">Проекты</NavDropdown.Item>
                                 <NavDropdown.Item href="/cources">Курсы</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Технопарк" id="basic-nav-dropdown">

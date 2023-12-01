@@ -9,12 +9,8 @@ const getChronologyComponent = () => {
     return (
         <div>
             <div className={styles.chronologyComponent}>
-                <div style={{
-                    flex: 1,
-                    alignSelf: "end",
-                    margin: "auto"
-                }}>
-                    <div className="h3">Хронология</div>
+                <div className={styles.chronologyComponentContent}>
+                    <h3>Хронология</h3>
                     <div className="text-secondary">
                         <strong>2017</strong>
                         <span> - открытие лаборатории IOT</span><br/>
@@ -29,7 +25,6 @@ const getChronologyComponent = () => {
                     </div>
                 </div>
                 <div style={{
-                    flex: 1,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "end"
