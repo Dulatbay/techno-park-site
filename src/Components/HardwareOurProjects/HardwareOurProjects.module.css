@@ -1,17 +1,16 @@
 
 .ourProjects {
     width: 100%;
-    height: 89%;
+    gap: 5vh;
+    margin-bottom: 10vh;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10vh;
-
+    justify-content: space-around;
 }
 
 .ourProjects button {
-
     width: 250px;
     height: 45px;
     border: none;
@@ -24,18 +23,12 @@
 }
 
 .ourProjects h3 {
-
     font-family: 'TildaSans', Arial, sans-serif;
     font-weight: 600;
     color: #052555;
-
-
 }
 
 .ourProjects p {
-
-
-    width: 26vw;
     font-size: 20px;
     font-family: 'TildaSans', Arial, sans-serif;
     font-weight: 300;
@@ -43,22 +36,35 @@
 }
 
 .proj1 {
-    margin-bottom: 105px;
+    padding: 0 2vw ;
+    width: 1600px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 5vw;
 }
 
-.proj1 img {
-    width: calc(var(--index) * 20);
-    height: calc(var(--index) * 15);
-    border-radius: 15px;
+@media (max-width: 1700px) {
+    .proj1 {
+        width: 1100px;
+    }
 }
 
-.container1 {
-    margin-left: 50px;
+@media (max-width: 1200px) {
+    .proj1 {
+        width: 800px;
+    }
 }
+
+@media (max-width: 900px) {
+    .proj1 {
+        width: 100vw;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+}
+
 
 .ourProjects h1 {
     text-align: center;
@@ -69,18 +75,38 @@
     padding: 130px 0 40px 0;
 }
 
-.proj2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2vw;
-    margin-bottom: 25vh;
+
+.img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    position: relative;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
 }
 
-.proj2 img {
-    width: calc(var(--index) * 20);
-    height: calc(var(--index) * 15);
-    border-radius: 15px;
+.img:before{
+    border-radius: 12px;
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.28);
+}
+
+
+
+.container1{
+    flex: 1;
+}
+
+.container1 p{
+    width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -91,11 +117,5 @@
     .container1 div p {
         width: 100%;
         font-size: 14px;
-
-    }
-
-
-    .ourProjects img {
-        margin-bottom: 30px;
     }
 }
