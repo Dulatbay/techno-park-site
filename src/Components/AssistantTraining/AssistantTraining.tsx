@@ -27,7 +27,7 @@ export const AssistantTraining = () => {
 
                 <div className={`${styles.backend}`}>
                     <div className={`${styles.imgContainer}`}>
-                        <img src={'public/image/assistant-training-backend.png'}/>
+                        <img alt={''} src={'public/image/assistant-training-backend.png'}/>
                     </div>
 
                     <div className={`${styles.content}`}>
@@ -46,5 +46,5 @@ export const AssistantTraining = () => {
             </div>
         </div>
     );
-}
+};
 

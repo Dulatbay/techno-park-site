@@ -22,4 +22,4 @@ export const OurActivities = () => {
             </div>
         </div>
     );
-}
+};

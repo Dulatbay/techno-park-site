@@ -1,0 +1,23 @@
+.faq{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 200px 0;
+}
+
+.faq h1{
+    color: #052555;
+    padding-bottom: 50px;
+}
+.according{
+    width: 42% !important;
+}
+
+@media (max-width: 1000px){
+    .according{
+        width: 60% !important;
+    }
+}
