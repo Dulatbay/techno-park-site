@@ -35,8 +35,7 @@
 .ourTeam__cards__carousel_content {
     overflow: visible;
     position: relative;
-    margin: 0 auto;
-    max-width: 760px;
+    max-width: 3040px;
     width: 100%;
 }
 
@@ -47,7 +46,8 @@
     transition: transform ease-in-out .3s;
     transform: translate(0,0);
     display: flex;
-    max-width: 3040px;
+
+    max-width: 760px;
 }
 
 .ourTeam__card {

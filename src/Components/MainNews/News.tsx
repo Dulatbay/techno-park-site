@@ -13,21 +13,21 @@ interface NewsArticle {
 
 const newsData: NewsArticle[] = [
     {
-        img: 'https://static.tildacdn.com/tild3839-6635-4332-a631-363064653063/IMAGE_2023-08-19_223.jpg',
+        img: 'https://thumb.tildacdn.com/tild3839-6635-4332-a631-363064653063/-/cover/432x324/center/center/-/format/webp/IMAGE_2023-08-19_223.jpg',
         categories: ['achievements', 'hardware'],
         title: 'N1',
         createdAt: 'August 19, 2023',
         content: 'Первая страна из Центральной Азии - Казахстан - дебютировала в международных гонках «Формула студент». Студенты разработали автомобиль для гонки и выиграли грант на обучение.',
     },
     {
-        img: 'https://static.tildacdn.com/tild3236-6337-4832-b966-396163643331/IMG_3274.jpg',
+        img: 'https://thumb.tildacdn.com/tild3236-6337-4832-b966-396163643331/-/cover/432x324/center/center/-/format/webp/IMG_3274.jpg',
         categories: ['software', 'events'],
         title: 'Summer IT Camp',
         createdAt: 'Июнь 17, 2023',
         content: 'Это 2-недельное онлайн-мероприятие предназначено для того, чтобы погрузить вас в мир передовых технологий, развить ваши soft skills, получить бесценный опыт, отточить ваши знания английского языка и вызвать волну восторга!',
     },
     {
-        img: 'https://static.tildacdn.com/tild6233-3966-4637-b464-633561633030/IMG_3282.jpg',
+        img: 'https://thumb.tildacdn.com/tild6233-3966-4637-b464-633561633030/-/cover/432x324/center/center/-/format/webp/IMG_3282.jpg',
         categories: ['events'],
         title: 'Technopark Office for Entrepreneurship',
         createdAt: 'Июнь 11, 2023',

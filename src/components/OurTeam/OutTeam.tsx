@@ -17,7 +17,6 @@ export const OurTeam = () => {
                         <div className={`${styles.ourTeam__cards__wrapper}`}>
                             <div className={`${styles.ourTeam__cards__carousel_content}`}>
                                 <div className={`${styles.ourTeam__card__wrapper}`}>
-                                    {/*Card - 1*/}
                                     <div className={`${styles.ourTeam__card}`}>
                                         {/*Card - 1*/}
                                         <div className={`${styles.ourTeam__card__box}`}>
