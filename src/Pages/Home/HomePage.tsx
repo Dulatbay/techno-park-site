@@ -28,12 +28,9 @@ import {News} from "../../components/MainNews/News.tsx";
 // }
 
 export const Homepage = () => {
-
-
     const imageUrl = 'public/image/home-page-header.png'
     const title = "SDU Tехнопарк"
     const description = "Технопарк - это объединение департаментов, направленных на воспитание и обучение студентов, способных создавать свои проекты и стартапы.";
-
 
     return (
         <div className={"about-it-park-page"}>
