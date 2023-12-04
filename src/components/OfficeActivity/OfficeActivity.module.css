@@ -1,0 +1,84 @@
+.office__activity {
+    width: 100%;
+    height: auto;
+}
+
+.office__activity_inner {
+    padding: 90px 0;
+}
+
+.card__line_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card__line {
+    width: 1060px;
+    height: 1px;
+    background-color: #052555;
+    opacity: 0.1;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.office__activity_title {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.title__span_1 {
+    margin-bottom: 20px;
+}
+
+.title__span_1 span {
+    font-size: 42px;
+    line-height: 1.23;
+    font-weight: 600;
+    color: rgb(5, 37, 85);
+}
+
+.title__span_2 span {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: rgb(5, 37, 85);
+}
+
+.office__activity_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+}
+
+.card_text_1 {
+    width: 260px;
+}
+
+.card_text_1 span {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: rgb(5, 37, 85);
+}
+
+.card_text_2 p span {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: rgb(5, 37, 85);
+}
+
+.card_text_2 {
+    text-align: left;
+    width: 760px;
+}
+
+.office__activity_cards {
+    width: 1060px;
+}
