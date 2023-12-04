@@ -22,6 +22,18 @@
     --bs-navbar-active-color: rgba(255, 255, 255, 0.7) !important;
 }
 
+.pending {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.active {
+    color: #1332ad !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 1.04em;
+}
+
 .navbar-nav{
     border-radius: 7px;
     --bs-nav-link-color: white !important;

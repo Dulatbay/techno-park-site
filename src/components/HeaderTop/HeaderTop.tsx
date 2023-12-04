@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './HeaderTop.css'
+import { NavLink } from "react-router-dom";
 
 function HeaderTop() {
     return (
@@ -14,8 +15,20 @@ function HeaderTop() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <NavDropdown title="SDU IT Park" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/about-it-park">О нас, IT Park</NavDropdown.Item>
-                                <NavDropdown.Item href="/it-park-projects">Проекты</NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <NavLink to={"/about-it-park"} className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : "pending"
+                                    }>
+                                        О нас, IT Park
+                                    </NavLink>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <NavLink to={"/it-park-projects"} className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : "pending"
+                                    }>
+                                        Проекты
+                                    </NavLink>
+                                </NavDropdown.Item>
                                 <NavDropdown.Item href="/cources">Курсы</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Технопарк" id="basic-nav-dropdown">
