@@ -7,9 +7,9 @@ import {MainLayout} from '../pages/MainLayout/MainLayout.tsx';
 import {AboutTechnoParkPage} from "../pages/AboutTechnoPark/AboutTechnoParkPage.tsx";
 import {Courses} from "../pages/Courses/Courses.tsx";
 import {Enactus} from "../pages/Enactus/Enactus.tsx";
-import {Homepage} from "../pages/Home/HomePage.tsx";
 import {HardwarePage} from "../pages/Hardware/HardwarePage.tsx";
 import {News} from "../pages/News/News.tsx";
+import {Homepage} from "../pages/Home/HomePage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         children: [
             {
               path:'/',
-              element:<Homepage/>
+              element:<Homepage />
             },
             {
                 path: '/about-it-park',
