@@ -2,11 +2,15 @@ import './Home.module.css'
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 // @ts-ignore
 import React from "react";
+import styles from "../OFE/OFE.module.css";
+import {OurMission} from "../../components/OurMission/OurMission.tsx";
+import {Departments} from "../../components/Departments/Departments.tsx";
+import {OurTeam} from "../../components/OurTeam/OutTeam.tsx";
+import {News} from "../../components/MainNews/News.tsx";
 
-// // @ts-ignore
-// const getSectionTeam = (imageUrl : string,  name : string,job_title:string,mail:string, description : string) => {
+// const getSectionTeam = (imageUrl: string, name: string, job_title: string, mail: string, description: string) => {
 //     return (
-//         <div className="card mb-3" >
+//         <div className="card mb-3">
 //             <div className="row g-0">
 //                 <div className="col-md-4">
 //                     <img src="..." className="img-fluid rounded-start" alt="..."/>
@@ -23,24 +27,26 @@ import React from "react";
 //         </div>);
 // }
 
-export const Homepage =()=>{
-
-
+export const Homepage = () => {
     const imageUrl = 'public/image/home-page-header.png'
     const title = "SDU Tехнопарк"
     const description = "Технопарк - это объединение департаментов, направленных на воспитание и обучение студентов, способных создавать свои проекты и стартапы.";
 
-
-    return(
+    return (
         <div className={"about-it-park-page"}>
             <HeaderImage imageUrl={imageUrl}
                          title={title}
                          description={description}
             />
 
-            <section className="our-team">
-
-            </section>
-            </div>
+            <main id={'main'}>
+                <div className={`${styles.content}`}>
+                    <OurMission/>
+                    <Departments/>
+                    <OurTeam/>
+                    <News />
+                </div>
+            </main>
+        </div>
     );
 }

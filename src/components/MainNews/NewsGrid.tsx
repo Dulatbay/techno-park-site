@@ -1,8 +1,8 @@
-// NewsGrid.tsx
 import React from 'react';
 import { NewsItem } from './NewsItem.tsx';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import styles from './News.module.css';
 
 interface NewsItem {
     img: string;
@@ -24,7 +24,7 @@ export const NewsGrid: React.FC<NewsGridProps> = ({ items, category }) => {
         : items.filter((item) => item.categories.includes(category.toLowerCase()));
 
     return (
-        <div className="news-grid">
+        <div className={styles.news_grid}>
             {filteredItems.map((item, i) => (
                 <NewsItem key={i} item={item} />
             ))}
