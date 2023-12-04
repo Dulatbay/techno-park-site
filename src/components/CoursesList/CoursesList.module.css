@@ -1,0 +1,121 @@
+.coursesList{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    background-color: lightgray;
+}
+
+.cardList{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coursesList h2{
+    text-align: center;
+    font-size: 42px;
+    color: #052555;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.coursesText{
+    text-align: center;
+    width: 30%;
+    font-size: 24px;
+    color: #052555;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 300;
+    padding-bottom: 80px;
+}
+.nlp, .dataScience{
+    width: 42%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 32px;
+}
+
+.nlp h5, .dataScience h5{
+    color: #052555;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.nlp p, .dataScience p{
+    color: #053785;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+.learnMore{
+    color: #052555;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+.learnMore.no-color-change:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+.imgContainer{
+    width: 65px;
+    height: 65px;
+    padding-bottom: 160px;
+}
+
+
+@media (max-width: 1000px) {
+    .coursesList{
+        height: 100%;
+    }
+    .coursesList h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .coursesText {
+        width: 90%;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .cardList{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .nlp, .dataScience{
+        width: 100%;
+    }
+
+    .imgContainer{
+        padding-bottom: 90px;
+    }
+
+    .nlp, .dataScience{
+        margin-bottom: 40px;
+    }
+
+    .nlp h5, .dataScience h5{
+        font-size: 18px;
+    }
+
+    .nlp p, .dataScience p{
+        font-size: 14px;
+    }
+    .learnMore{
+        font-size: 14px;
+    }
+
+}

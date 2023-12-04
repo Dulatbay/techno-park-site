@@ -1,0 +1,40 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'TildaSans';
+    src: url("/public/font/TildaSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    src: url("/public/font/TildaSans-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    src: url("/public/font/TildaSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TildaSans';
+    src: url("/public/font/TildaSans-Medium.ttf");
+    font-weight: 600;
+}
+
+* {
+    font-family: 'TildaSans', serif;
+    color: black;
+}
+
+footer * {
+    color: white !important;
+}

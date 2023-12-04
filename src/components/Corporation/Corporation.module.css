@@ -1,0 +1,83 @@
+/* Corporation.module.css */
+
+.footerTop {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/public/image/cooperation.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+}
+
+.footerTop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footerTopContent {
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 18px;
+    max-width: 750px;
+}
+
+.footerTopContent p {
+    font-size: 16px;
+    color: white;
+}
+
+.footerTopContent h1 {
+    font-size: 34px;
+    color: white;
+    font-weight: 600;
+}
+
+.footerTopInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 15px;
+    width: 560px;
+}
+
+.footerTopInput input{
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .footerTopInput {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footerTopInput {
+        width: 270px;
+    }
+}
+
+@media (max-width: 300px) {
+    .footerTopInput {
+        width: 270px;
+    }
+}
+
+.btnPrimary {
+    --bs-btn-bg: #052555FF !important;
+    --bs-btn-border-color: #052555FF !important;
+}
