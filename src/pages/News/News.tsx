@@ -12,13 +12,15 @@ export const News = () => {
         <>
             <NewsTop/>
             <div className={styles.newsContainerList}>
-                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
                 <hr className={styles.hr} />
                 <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
                 <hr className={styles.hr} />
                 <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
                 <hr className={styles.hr} />
                 <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
+                <hr className={styles.hr} />
+                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
+                <hr className={styles.hr} />
             </div>
         </>
     );
