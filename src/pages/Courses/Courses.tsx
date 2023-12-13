@@ -6,7 +6,7 @@ import {FAQ} from "../../components/FAQ/FAQ.tsx";
 // import {Footer} from "../../components/Footer/Footer.tsx";
 
 export const Courses = () => {
-    const headerImageUrl = 'public/image/courses-header-image.jpg'
+    const headerImageUrl = '/image/courses-header-image.jpg'
     const headerTitle = "КУРСЫ"
     const headerDescription = "";
 

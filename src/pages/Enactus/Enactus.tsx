@@ -7,7 +7,7 @@ import {OurActivities} from "../../components/EnactusOurActivities/OurActivities
 // import {Footer} from "../../components/Footer/Footer.tsx";
 
 export const Enactus = () => {
-    const headerImageUrl = 'public/image/enactus-header-image.png'
+    const headerImageUrl = '/image/enactus-header-image.png'
     const headerTitle = "Enactus"
     const headerDescription = "Мы верим, что инвестирование в студентов, которые совершают предпринимательские действия для других, создает лучший мир для всех нас.";
 

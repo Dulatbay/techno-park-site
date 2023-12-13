@@ -1,4 +1,3 @@
-import './HeaderImage.module.css'
 import styles from './HeaderImage.module.css';
 
 // import {useEffect} from "react";

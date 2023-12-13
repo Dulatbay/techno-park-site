@@ -5,6 +5,7 @@
 }
 
 .parallaxContainer {
+    position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -48,12 +49,12 @@
 
 .parallaxContent h1 {
     max-width: 80vw;
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 700;
 }
 
 .parallaxContent p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     max-width: 60vw;
     margin: auto;

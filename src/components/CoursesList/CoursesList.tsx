@@ -13,7 +13,7 @@ export const CoursesList = () => {
                     <div className={`${styles.imgContainer}`}>
                         <img alt={''} src={'https://static.tildacdn.com/tild6435-6431-4834-b861-316163393433/__16.svg'}/>
                     </div>
-                    <h5>NLP</h5>
+                    <h4>NLP</h4>
                     <p>
                         Наш курс по NLP разработанн для того, чтобы
                         вы могли освоить навыки обработки естественного языка и

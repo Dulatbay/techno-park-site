@@ -42,7 +42,7 @@
     height: 435px;
     flex: 1;
     width: 100%;
-    background-image: url(/public/image/mainProject.jpg);
+    background-image: url(/image/mainProject.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -23,7 +23,7 @@ const getSection = (imageUrl: string, title: string, description: string) => {
 
 export const AboutITParkPage = () => {
     console.log("created AboutITParkPage")
-    const imageUrl = 'public/image/about-it-park-page-header.jpg'
+    const imageUrl = '/image/about-it-park-page-header.jpg'
     const title = "SDU IT Park"
     const description = "SDU IT Park - товарищество с ограниченной ответственностью, единственным учредителем которого является университет СДУ.";
     return (
@@ -34,10 +34,10 @@ export const AboutITParkPage = () => {
             />
             <main className={"bg-white p-5 d-flex flex-column justify-content-center align-items-center gap-5"}>
                 {
-                    getSection("/public/image/mainCourse.jpg", "Курсы", "Курсы от SDU IT Park")
+                    getSection("/image/mainCourse.jpg", "Курсы", "Курсы от SDU IT Park")
                 }
                 {
-                    getSection("/public/image/mainProject.jpg", "Проекты", "Проекты выполненные в рамках SDU IT Park")
+                    getSection("/image/mainProject.jpg", "Проекты", "Проекты выполненные в рамках SDU IT Park")
                 }
             </main>
             <Corporation/>

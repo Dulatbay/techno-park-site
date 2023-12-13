@@ -2,7 +2,7 @@ import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 import styles from './AboutTechnoPark.module.css'
 import {OurOffice} from "../../components/OutOffice/OurOffice.tsx";
 
-const imageUrl = 'public/image/about-techno-park-page-header.jpg'
+const imageUrl = '/image/about-techno-park-page-header.jpg'
 const title = "ТЕХНОПАРК"
 const description = "Технопарк - это лаборатория прототипирования и научных исследований для одаренных студентов. Это пространство, где решаются актуальные проблемы, и база, где теория превращается в практические навыки. Мастерская, где знания и навыки передаются от старшего поколения новичкам уже с первого курса.";
 const getChronologyComponent = () => {

@@ -6,7 +6,7 @@ import styles from './ProjectsPage.module.css';
 export const ProjectsPage = () => {
     console.log('created ProjectsPage');
 
-    const imageUrl = 'public/image/projects-page-header.jpg';
+    const imageUrl = '/image/projects-page-header.jpg';
     const title = 'Проекты';
     const description = 'Коммерческие проекты заказанные у SDU IT Park.';
 

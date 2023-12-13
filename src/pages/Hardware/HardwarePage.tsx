@@ -3,7 +3,7 @@ import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 import {HardwareOurProjects} from "../../components/HardwareOurProjects/HardwareOurProjects.tsx";
 import {BecomePartOfTeamHardware} from "../../components/BecomePartOfTeamHardware/BecomePartOfTeamHardware.tsx";
 
-const headerImageUrl = '/public/image/hardware-page.jpg'
+const headerImageUrl = '/image/hardware-page.jpg'
 const headerTitle = "HARDWARE"
 const headerDescription = "";
 export const HardwarePage = () => {
