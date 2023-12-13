@@ -38,3 +38,11 @@ body {
 footer * {
     color: white !important;
 }
+
+:root{
+    --index: calc(1vh + 1vw);
+    --text-fz-lg: 18px;
+    --text-fz-sm: 16px;
+    --title-text-fz-sm: 24px;
+    --title-text-fz-lg: 34px;
+}

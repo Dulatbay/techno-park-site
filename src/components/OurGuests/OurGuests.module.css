@@ -51,7 +51,7 @@
 }
 
 .card__text_description {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.55;
     font-weight: 300;
     margin-top: 1vh;
@@ -61,8 +61,8 @@
 
 .card__image_wrapper{
     height: 350px;
-    /*border: 1px solid rgba(128, 128, 128, 0.45);*/
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .card__image_wrapper img {
