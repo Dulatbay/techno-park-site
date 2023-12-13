@@ -1,0 +1,7 @@
+.news-container-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 55px;
+}

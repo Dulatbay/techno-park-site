@@ -29,7 +29,7 @@ const router = createBrowserRouter([
                 element: <ProjectsPage />,
             },
             {
-                path: '/technopark/hardware',
+                path: '/hardware',
                 element: <HardwarePage />,
             },
             {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
                 element: <AboutTechnoParkPage />,
             },
             {
-                path: '/cources',
+                path: '/courses',
                 element: <Courses />,
             },
             {

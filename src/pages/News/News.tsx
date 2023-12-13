@@ -1,6 +1,6 @@
 import {NewsTop} from "../../components/NewsTop/NewsTop.tsx";
 import {NewsMain} from "../../components/NewsMain/NewsMain.tsx";
-
+import styles from './News.module.css'
 export const News = () => {
 
     const imageUrl = 'public/image/software-page-header.jpg'
@@ -11,10 +11,12 @@ export const News = () => {
     return (
         <>
             <NewsTop/>
-            <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
-            <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
-            <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
-            <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
+            <div className={styles.newsContainerList}>
+                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
+                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
+                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
+                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
+            </div>
         </>
     );
 };

@@ -27,8 +27,20 @@
     text-decoration: none !important;
 }
 
+.news-pending{
+    color: white !important;
+    text-decoration: none !important;
+}
+
 .active {
     color: #1332ad !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 1.04em;
+}
+
+.news-active{
+    color: #ffffff !important;
     text-decoration: none !important;
     font-weight: 600;
     font-size: 1.04em;
