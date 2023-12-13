@@ -1,7 +1,11 @@
-.news-container-list{
+.newsContainerList{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
 
-    gap: 55px;
+.hr{
+    width: 40%;
 }
