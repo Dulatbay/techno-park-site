@@ -5,8 +5,7 @@
 .content{
     display: flex;
     flex-direction: row;
-    height: 80vh;
-    width: 80vw;
+    width: 100%;
     align-items: center;
     justify-content: center;
     gap: 3vw;
@@ -21,6 +20,7 @@
 }
 
 .titleImage {
+    border-radius: 12px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,16 +32,21 @@
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: calc(var(--index) / 5);
+    gap: 4px;
 }
 
 .image{
-    cursor: pointer;
-    height: calc(var(--index) * 2);
-    width: calc(var(--index) * 2);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.image img{
+    object-fit: cover;
+    aspect-ratio: 1;
+    width: 100%;
+    image-rendering: pixelated;
 }
 
 .right {
@@ -55,8 +60,7 @@
 }
 
 .right ul{
-    font-size: 16px;
-
+    font-size: 18px;
 }
 
 @media (max-width: 1100px) {

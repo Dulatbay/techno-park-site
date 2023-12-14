@@ -1,12 +1,16 @@
+
+
 .chronologyComponent * {
     color: black;
 }
 
 .chronologyComponent {
+    width: 100%;
+
     display: flex;
-    width: 80vw;
     justify-content: space-between;
     align-items: start;
+    gap: 5vw;
 }
 
 .chronologyComponentContent h3 {
@@ -15,11 +19,12 @@
 }
 
 .chronologyComponentContent div {
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .content {
-    width: 100%;
+    margin: auto;
+    max-width: 1400px;
     background: white;
     display: flex;
     align-items: center;
@@ -34,8 +39,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: calc(var(--index) * 25);
-    height: calc(var(--index) * 25);
+    width: calc(var(--index) * 20);
+    height: calc(var(--index) * 20);
     border-radius: 12px;
 }
 
@@ -47,7 +52,8 @@
         justify-content: center;
         gap: 2vh;
     }
-    .image{
+
+    .image {
         width: 80vw;
         height: 80vw;
     }
