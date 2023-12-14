@@ -17,15 +17,15 @@ interface NewsGridProps {
     category: string;
 }
 
-export const NewsGrid: React.FC<NewsGridProps> = ({ items, category }) => {
+export const NewsGrid: React.FC<NewsGridProps> = ({ items }) => {
     // Filter items based on the selected category
-    const filteredItems = category === 'all'
-        ? items
-        : items.filter((item) => item.categories.includes(category.toLowerCase()));
+    // const filteredItems = category === 'all'
+    //     ? items
+    //     : items.filter((item) => item.categories.includes(category.toLowerCase()));
 
     return (
         <div className={styles.news_grid}>
-            {filteredItems.map((item, i) => (
+            {items.map((item, i) => (
                 <NewsItem key={i} item={item} />
             ))}
         </div>

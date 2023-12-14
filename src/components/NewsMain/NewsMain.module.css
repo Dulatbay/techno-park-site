@@ -21,7 +21,7 @@
 
 
 .content h5{
-    font-size: 16px;
+    font-size: var(--title-text-fz-sm);
     font-family: 'TildaSans',Arial,sans-serif;
     font-weight: 600;
     color: #052555;
@@ -29,9 +29,8 @@
 }
 
 .content p{
-    font-size: 14px;
+    font-size: var(--text-fz-sm);
     font-family: 'TildaSans',Arial,sans-serif;
-    font-weight: 300;
     color: #052555;
 }
 
@@ -39,7 +38,7 @@
 .contentBottom span{
     font-size: 12px;
     font-family: 'TildaSans',Arial,sans-serif;
-    font-weight: 600;
+    font-weight: 300;
     color: #052555;
     padding-right: 20px;
 }

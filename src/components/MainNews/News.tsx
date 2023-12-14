@@ -66,7 +66,7 @@ export const News = () => {
 
                     <div className={`${styles.news__blog}`} id={"newsBlog"}>
                         <NewsCategory active={active} setActive={setActive} setCategory={setCategory}/>
-                        <NewsGrid items={newsData} category={category}/>
+                        <NewsGrid items={items} category={category}/>
                     </div>
                 </div>
             </div>

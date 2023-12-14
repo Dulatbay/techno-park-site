@@ -8,7 +8,7 @@ export const AssistantTraining = () => {
 
                 <div className={`${styles.frontend}`}>
                     <div className={`${styles.imgContainer}`}>
-                        <img src={'public/image/assistant-training-frontend.png'}/>
+                        <img src={'/image/assistant-training-frontend.png'}/>
                     </div>
 
                     <div className={`${styles.content}`}>
@@ -27,7 +27,7 @@ export const AssistantTraining = () => {
 
                 <div className={`${styles.backend}`}>
                     <div className={`${styles.imgContainer}`}>
-                        <img alt={''} src={'public/image/assistant-training-backend.png'}/>
+                        <img alt={''} src={'/image/assistant-training-backend.png'}/>
                     </div>
 
                     <div className={`${styles.content}`}>

@@ -9,7 +9,7 @@ export const HardwareOurProjects = () => {
             <div className={`${styles.ourProjects}`}>
                 <div className={styles.proj1}>
                     <div className={styles.img} style={{
-                        backgroundImage: "url(/public/image/hardware-our-projects1.jpg)"
+                        backgroundImage: "url(/image/hardware-our-projects1.jpg)"
                     }}></div>
                     <div className={styles.container1}>
                         <h3>Game of Drones</h3>
@@ -45,7 +45,7 @@ export const HardwareOurProjects = () => {
                         </a>
                     </div>
                     <div className={styles.img} style={{
-                        backgroundImage: "url(/public/image/hardware-our-projects2.jpeg)"
+                        backgroundImage: "url(/image/hardware-our-projects2.jpeg)"
                     }}></div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ interface NewsItemProps {
 export const NewsItem: React.FC<NewsItemProps> = ({item}) => {
     return (
         <>
-            <a href="#" className={`${styles.article}`}>
+            <a href="/" className={`${styles.article}`}>
                 <div className={`${styles.article__wrapper}`}>
                     <div className={`${styles.article_image}`}>
                         <img src={item.img} alt={item.title}/>

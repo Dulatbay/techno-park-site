@@ -35,7 +35,7 @@ const NewsCategory: React.FC<MenuProps> = ({active, setActive, setCategory}) => 
                                         className={`${styles[active === link.id ? "active" : "inactive"]}`}
                                         onClick={() => onClick(link.id, link.value)}
                                     >
-                                        <a href="#newsBlog">
+                                        <a>
                                             {link.name}
                                         </a>
                                     </li>

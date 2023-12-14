@@ -13,7 +13,7 @@ export const HardwarePage = () => {
         <div className={styles.hardware_page}>
             <HeaderImage imageUrl={headerImageUrl} title={headerTitle} description={headerDescription}/>
             <HardwareOurProjects/>
-            <BecomePartOfTeamHardware imageUrl="/public/image/hardware-partOfTeam.jpg" title="Стань частью команды!"/>
+            <BecomePartOfTeamHardware imageUrl="/image/hardware-partOfTeam.jpg" title="Стань частью команды!"/>
         </div>
     );
 }

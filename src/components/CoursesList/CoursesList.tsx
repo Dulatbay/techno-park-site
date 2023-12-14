@@ -11,7 +11,7 @@ export const CoursesList = () => {
             <div className={`${styles.cardList}`}>
                 <div className={`${styles.nlp}`}>
                     <div className={`${styles.imgContainer}`}>
-                        <img alt={''} src={'https://static.tildacdn.com/tild6435-6431-4834-b861-316163393433/__16.svg'}/>
+                        <img alt={''} src={'/image/course-1.svg'}/>
                     </div>
                     <h4>NLP</h4>
                     <p>
@@ -19,12 +19,12 @@ export const CoursesList = () => {
                         вы могли освоить навыки обработки естественного языка и
                         стать уверенным и компетентным профессионалом в этой области.
                     </p>
-                    <a href={''} className={`${styles.learnMore}`}>Узнать больше →</a>
+                    <a href={'https://docs.google.com/document/d/1IaQ98oztlAHscq5N4BVmesrQgmo8VX0EfniH6VxXJsA/edit'} className={`${styles.learnMore}`}>Узнать больше →</a>
                 </div>
 
                 <div className={`${styles.dataScience}`}>
                     <div className={`${styles.imgContainer}`}>
-                        <img alt={''} src={'https://static.tildacdn.com/tild3836-3536-4737-b863-646232623236/__1.svg'}/>
+                        <img alt={''} src={'/image/course-2.svg'}/>
                     </div>
                     <h5>Data science</h5>
                     <p>
@@ -32,7 +32,7 @@ export const CoursesList = () => {
                         освоить навыки обработки естественного языка и стать
                         уверенным и компетентным профессионалом в этой области.
                     </p>
-                    <a href={''} className={`${styles.learnMore}`}>Узнать больше →</a>
+                    <a href={'https://docs.google.com/document/d/1ydZyJCwia5VEyT3mA1xNFdyV9vKJtHc8U4nuEHQuD9g/edit#heading=h.gjdgxs'} className={`${styles.learnMore}`}>Узнать больше →</a>
                 </div>
             </div>
         </div>
