@@ -1,6 +1,5 @@
 import Corporation from "../../components/Corporation/Corporation.tsx";
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
-import {Link} from "react-router-dom";
 
 
 const getSection = (imageUrl: string, title: string, description: string, redirectTo: string) => {

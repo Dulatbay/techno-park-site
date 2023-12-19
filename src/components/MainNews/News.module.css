@@ -50,6 +50,14 @@
     margin-bottom: 40px;
 }
 
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu li {
     display: inline-block;
     margin-right: 10px;
@@ -93,7 +101,6 @@
 }
 
 .article {
-    width: 400px;
     border-radius: 8px;
     overflow: hidden;
     text-decoration: none;

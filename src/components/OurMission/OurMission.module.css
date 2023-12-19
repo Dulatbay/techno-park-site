@@ -56,7 +56,11 @@
 }
 
 .ourMission__left__side {
-    padding: 60px;
+    /*padding: 60px;*/
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    z-index: 1;
     height: auto; /* Adjusted height for responsiveness */
     width: 100%;
 }
@@ -68,14 +72,14 @@
 }
 
 .ourMission__right__side_img {
-    width: 100%;
-    height: auto; /* Adjusted height for responsiveness */
+    height: 100%;
+    width: auto; /* Adjusted height for responsiveness */
     overflow: hidden;
 }
 
 .ourMission__right__side_img img {
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -98,6 +102,9 @@
     }
 
     .ourMission__left__side {
+        left: 0;
+        top: 0;
+
         padding: 20px; /* Adjusted padding for smaller screens */
     }
 }

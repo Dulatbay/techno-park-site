@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './OurMission.module.css';
@@ -30,7 +29,7 @@ export const OurMission = () => {
                     </Col>
                     <Col lg={7} className={`position-relative ${styles.ourMission__right__side}`}>
                         <Image
-                            src={'../../../public/image/our_mission.jpg'}
+                            src={'/image/our_mission.jpg'}
                             alt="Photo mission!"
                             className={styles.ourMission__right__side_img}
                             fluid
