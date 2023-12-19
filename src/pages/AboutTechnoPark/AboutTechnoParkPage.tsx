@@ -38,15 +38,15 @@ const getChronologyComponent = () => {
 
 export const AboutTechnoParkPage = () => {
     return (
-        <div>
+        <>
             <HeaderImage imageUrl={imageUrl} title={title} description={description}/>
             <div className={styles.content}>
                 {
                     getChronologyComponent()
                 }
                 <OurOffice/>
+                <WhatAreWeDoing/>
             </div>
-            <WhatAreWeDoing/>
-        </div>
+        </>
     )
 }

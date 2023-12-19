@@ -24,7 +24,7 @@
 
 .projectList {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     width: 100%;
     gap: calc(var(--index));

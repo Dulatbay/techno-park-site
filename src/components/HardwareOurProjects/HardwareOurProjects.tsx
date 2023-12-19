@@ -4,7 +4,7 @@ export const HardwareOurProjects = () => {
 
     return (
 
-        <>
+        <div className={styles.hardwareOurProjects}>
             <h1 className={"text-center m-5"}>Наши проекты</h1>
             <div className={`${styles.ourProjects}`}>
                 <div className={styles.proj1}>
@@ -29,6 +29,7 @@ export const HardwareOurProjects = () => {
                         </a>
                     </div>
                 </div>
+                <div className={styles.divider}></div>
                 <div className={styles.proj1}>
                     <div className={styles.container1}>
                         <h3>N1</h3>
@@ -49,7 +50,7 @@ export const HardwareOurProjects = () => {
                     }}></div>
                 </div>
             </div>
-        </>
+        </div>
 
     );
 }

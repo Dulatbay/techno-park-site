@@ -79,7 +79,11 @@
     .right{
         align-self: start;
     }
-    .titleImage{
+    .images{
+        justify-content: center;
+    }
+    .titleImage {
+        margin: auto;
         width: 80vw;
         height: 50vw;
     }

@@ -11,8 +11,9 @@
 }
 
 .ourProjects button {
-    width: 250px;
-    height: 45px;
+    min-width: 250px;
+    padding: 0 50px;
+    height: 60px;
     border: none;
     -webkit-border-radius: 100px;
     background-color: #052555;
@@ -58,7 +59,7 @@
 
 @media (max-width: 900px) {
     .proj1 {
-        width: 100vw;
+        width: 100%;
         flex-direction: column;
         align-items: stretch;
         justify-content: stretch;
@@ -107,6 +108,17 @@
 
 .container1 p{
     width: 100%;
+}
+
+.hardwareOurProjects{
+    padding: 0 15px;
+}
+
+.divider{
+    height: 2px;
+    background: #052555;
+    width: 100%;
+    opacity: 0.1;
 }
 
 @media (max-width: 1000px) {

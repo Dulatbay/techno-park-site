@@ -45,6 +45,7 @@ export const OurOffice = () => {
                     <li>Кабинет директора</li>
                     <li>IOT, ML лаборатории (в процессе)</li>
                 </ul>
+                <div className="description_text">Офис открыт для старших и младших ассистентов, студентов по направлению beta career и студентов обучающихся в Технопарке.</div>
             </div>
         </div>
     );

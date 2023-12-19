@@ -19,7 +19,7 @@ export const ProjectsPage = () => {
                     <div className={styles.projectList}>
                         <Project projectImage={"/image/project-1.png"} projectName={"OZYURT GROUP"}
                                  projectTitle={"Сайт для сети OZYURT GROUP"}/>
-                        <Project projectImage={"/image/project-2.png"} projectName={"Акимат города Алматы"}
+                        <Project projectImage={"/image/akimat.png"} projectName={"Акимат города Алматы"}
                                  projectTitle={"Портал для отдела ономастики аппарата акима города Алматы"}/>
                     </div>
                 </div>

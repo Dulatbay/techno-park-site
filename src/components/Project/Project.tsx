@@ -1,4 +1,4 @@
-import './Project.css'
+import styles from './Project.module.css'
 
 export const Project = ({projectName, projectTitle, projectImage}: {
     projectName: string,
@@ -6,11 +6,12 @@ export const Project = ({projectName, projectTitle, projectImage}: {
     projectImage: string
 }) => {
     return (
-        <div className="project">
-            <div className="project-image" style={{background: `url(${projectImage})`}}>
+        <div className={styles.project}>
+            <div className={styles.projectImage}>
+                <img src={projectImage} alt=".."/>
                 <span>{projectName}</span>
             </div>
-            <div className="project-title">
+            <div className={styles.projectTitle}>
                 {projectTitle}
             </div>
         </div>

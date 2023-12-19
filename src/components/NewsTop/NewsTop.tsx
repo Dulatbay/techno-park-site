@@ -1,27 +1,44 @@
 import styles from './NewsTop.module.css';
-export const NewsTop = () => {
-    const links = [
-        {id: 1, name: "All", value: "all"},
-        {id: 2, name: "Hardware", value: "hardware"},
-        {id: 3, name: "Software", value: "software"},
-        {id: 4, name: "Projects", value: "projects"},
-        {id: 5, name: "Events", value: "events"},
-        {id: 6, name: "Achievements", value: "achievements"},
-    ];
+import {useGetAllTagsQuery} from "../../services/technoHubApi.ts";
+import {useEffect, useState} from "react";
+
+export const NewsTop = ({setActiveCategory}: {
+    setActiveCategory: (name: string) => void,
+}) => {
+    const {data, isError} = useGetAllTagsQuery()
+    const [items, setItems] = useState<typeof data>(undefined)
+    const [activeCategoryIndex, setActiveCategoryIndex] = useState(0)
+
+    useEffect(() => {
+
+        if (!isError && data) {
+            setItems([{id: 0, name: "All"}, ...data])
+        }
+
+    }, [data, isError])
+
+    function onClick(id: number, name: string) {
+        setActiveCategoryIndex(id)
+        setActiveCategory(name)
+    }
+
+    if (isError || !data)
+        return <h1>Не удалось соедениться с сервером</h1>
+
     return (
         <div className={`${styles.newsCategory}`}>
             <div className={`${styles.newsCategory__container}`}>
                 <div className={`${styles.newsCategory__inner}`}>
                     <nav className={`${styles.menu}`}>
                         <ul>
-                            {links.map((link) => (
+                            {items?.map((link) => (
                                 <li
                                     key={link.id}
-                                    className={`${styles[1 === link.id ? "active" : "inactive"]}`}
-                                    // onClick={() => onClick(link.id, link.value)}
+                                    className={`${styles[activeCategoryIndex === link.id ? "active" : "inactive"]}`}
+                                    onClick={() => onClick(link.id, link.name.toLowerCase())}
                                 >
                                     <a href="#">
-                                        {link.name}
+                                        {link.name.charAt(0).toUpperCase() + link.name.slice(1).toLowerCase()}
                                     </a>
                                 </li>
                             ))}

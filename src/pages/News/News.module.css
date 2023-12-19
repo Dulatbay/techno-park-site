@@ -1,4 +1,4 @@
-.newsContainerList{
+.newsContainerList {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -7,6 +7,10 @@
     margin-bottom: 5vh;
 }
 
-.hr{
+.hr {
     width: 40%;
+}
+
+.news {
+    min-height: 100vh;
 }

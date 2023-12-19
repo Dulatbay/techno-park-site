@@ -1,10 +1,11 @@
 import styles from './SoftwareOurProjects.module.css';
+
 export const SoftwareOurProjects = () => {
     return (
         <div className={`${styles.ourProjects}`}>
             <h1>Наши проекты</h1>
             <div className={`${styles.projectsContent}`}>
-                <img alt={''} src={'/image/software-our-projects.png'} />
+                <img alt={''} src={'/image/software-our-projects.png'}/>
                 <div>
                     <h3>UNT Informatics</h3>
                     <p>
@@ -12,7 +13,8 @@ export const SoftwareOurProjects = () => {
                         онлайн тренажерами для практики кодирования, пробными тестами
                         с возможностью анализа ошибок и другими полезными функциями.
                     </p>
-                    <button>Сайт проекта</button>
+                    <button><a href="https://unt-front.vercel.app/" style={{textDecoration: "none", color: "white"}} target={"_blank"}>Сайт проекта</a>
+                    </button>
                 </div>
 
 

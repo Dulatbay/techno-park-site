@@ -1,27 +1,45 @@
 import {NewsTop} from "../../components/NewsTop/NewsTop.tsx";
 import {NewsMain} from "../../components/NewsMain/NewsMain.tsx";
 import styles from './News.module.css'
-export const News = () => {
+import React, {useEffect, useState} from "react";
+import {useGetAllBlogsQuery} from "../../services/technoHubApi.ts";
 
-    const imageUrl = '/image/software-page-header.jpg'
-    const title = "Summer IT Camp   "
-    const description = "Офис предпринимательства СДУ был открыт в августе 2022 года, главной целью которого является создать предпринимательскую экосистему в Университете.августе 2022 года, главной целью которого является создать предпринимательскую экосистему в Университете.";
-    const date = "20.10.2020"
-    const genre = ['События', 'Software', 'Hardware']
+
+export const News = () => {
+    const [activeCategory, setActiveCategory] = useState('all');
+    const {data, isError} = useGetAllBlogsQuery()
+    const [items, setItems] = useState<typeof data>(undefined)
+
+    useEffect(() => {
+        if (!isError && data) {
+            setItems(data)
+        }
+    }, [data, isError]);
+
+
+    useEffect(() => {
+        setItems(data?.filter(i => i.tags.some(j => activeCategory === 'all' ? true : activeCategory === j.name)))
+        console.log(items, activeCategory)
+    }, [data, activeCategory]);
+
+
     return (
-        <>
-            <NewsTop/>
+        <div className={styles.news}>
+            <NewsTop setActiveCategory={setActiveCategory}/>
             <div className={styles.newsContainerList}>
-                <hr className={styles.hr} />
-                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
-                <hr className={styles.hr} />
-                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
-                <hr className={styles.hr} />
-                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
-                <hr className={styles.hr} />
-                <NewsMain imageUrl={imageUrl} title={title} description={description} date={date} genre={genre}/>
-                <hr className={styles.hr} />
+                {
+                    items && items.map((i) => (
+                        <React.Fragment key={i.id}>
+                            <hr className={styles.hr}/>
+                            <NewsMain imageUrl={i.image_url} title={i.title} description={i.content} date={i.created_at}
+                                      genre={i.tags.map(j => j.name)}
+                            />
+                        </React.Fragment>
+                    ))
+                }
+                <hr className={styles.hr}/>
             </div>
-        </>
+        </div>
     );
+
 };

@@ -40,7 +40,7 @@ const NewsCategory: React.FC<MenuProps> = ({active, setActive, setCategory}) => 
                                         onClick={() => onClick(link.id, link.name.toLowerCase())}
                                     >
                                         <a>
-                                            {link.name}
+                                            {link.name.charAt(0).toUpperCase() + link.name.slice(1).toLowerCase()}
                                         </a>
                                     </li>
                                 ))}
