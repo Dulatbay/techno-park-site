@@ -1,6 +1,7 @@
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 import styles from './AboutTechnoPark.module.css'
 import {OurOffice} from "../../components/OutOffice/OurOffice.tsx";
+import {WhatAreWeDoing} from "../../components/WhatAreWeDoing/WhatAreWeDoing.tsx";
 
 const imageUrl = '/image/about-techno-park-page-header.jpg'
 const title = "ТЕХНОПАРК"
@@ -45,6 +46,7 @@ export const AboutTechnoParkPage = () => {
                 }
                 <OurOffice/>
             </div>
+            <WhatAreWeDoing/>
         </div>
     )
 }
