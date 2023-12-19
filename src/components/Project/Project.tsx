@@ -1,12 +1,17 @@
 import './Project.css'
-export const Project = () => {
+
+export const Project = ({projectName, projectTitle, projectImage}: {
+    projectName: string,
+    projectTitle: string,
+    projectImage: string
+}) => {
     return (
         <div className="project">
-            <div className="project-image">
-                <span>OZYURT GROUP</span>
+            <div className="project-image" style={{background: `url(${projectImage})`}}>
+                <span>{projectName}</span>
             </div>
             <div className="project-title">
-                Сайт для сети OZYURT GROUP
+                {projectTitle}
             </div>
         </div>
     );

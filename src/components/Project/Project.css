@@ -11,10 +11,9 @@
 
 .project-image {
     position: relative;
-    background-image: url("/public/image/project-1.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
     width: 100%;
     border-radius: 12px;

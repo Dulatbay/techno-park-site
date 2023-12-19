@@ -58,7 +58,7 @@
 }
 
 
-@media (max-width: 1145px) {
+@media (max-width: 1200px) {
     .item{
         flex-direction: column;
         justify-content: center;
@@ -70,10 +70,15 @@
     }
 
     .items{
+        padding: 0 15px;
         margin: auto;
         max-width: 560px;
 
         align-items: center;
         justify-content: center;
+    }
+
+    .item_description ul{
+        margin-left: 0;
     }
 }

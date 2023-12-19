@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './News.module.css';
+import {useGetAllTagsQuery} from "../../services/technoHubApi.ts";
 
 interface MenuProps {
     active: number;
@@ -8,19 +9,22 @@ interface MenuProps {
 }
 
 const NewsCategory: React.FC<MenuProps> = ({active, setActive, setCategory}) => {
-    const links = [
-        {id: 1, name: "All", value: "all"},
-        {id: 2, name: "Hardware", value: "hardware"},
-        {id: 3, name: "Software", value: "software"},
-        {id: 4, name: "Projects", value: "projects"},
-        {id: 5, name: "Events", value: "events"},
-        {id: 6, name: "Achievements", value: "achievements"},
-    ];
+    const {data, isError} = useGetAllTagsQuery()
+    const [links, setLinks] = useState<typeof data>(undefined)
+
+    useEffect(() => {
+        if (!isError && data?.length) {
+            setLinks([{id: 0, name: "All"}, ...data])
+        }
+    }, [data, isError])
 
     const onClick = (id: number, value: string) => {
         setActive(id);
         setCategory(value);
     };
+
+    if (isError)
+        return <h1>Не удалось свзязаться с сервером</h1>
 
     return (
         <>
@@ -29,11 +33,11 @@ const NewsCategory: React.FC<MenuProps> = ({active, setActive, setCategory}) => 
                     <div className={`${styles.newsCategory__inner}`}>
                         <nav className={`${styles.menu}`}>
                             <ul>
-                                {links.map((link) => (
+                                {links?.map((link) => (
                                     <li
                                         key={link.id}
                                         className={`${styles[active === link.id ? "active" : "inactive"]}`}
-                                        onClick={() => onClick(link.id, link.value)}
+                                        onClick={() => onClick(link.id, link.name.toLowerCase())}
                                     >
                                         <a>
                                             {link.name}

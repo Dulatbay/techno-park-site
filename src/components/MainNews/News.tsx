@@ -6,7 +6,7 @@ import {NewsArticle, useGetAllBlogsQuery} from "../../services/technoHubApi.ts";
 
 
 export const News = () => {
-    const [active, setActive] = useState(1);
+    const [active, setActive] = useState(0);
     const [tags, setTags] = useState("all");
     const {data, error, isFetching, isSuccess} = useGetAllBlogsQuery()
     const [items, setItems] = useState<NewsArticle[]>([]);
@@ -14,18 +14,15 @@ export const News = () => {
         if (data != undefined && !isFetching && isSuccess) {
             const filteredItems = tags === 'all'
                 ? data
-                : data.filter((item) => item.tags.forEach(i => {
-                    if(i.title === undefined) return false;
-                    console.log(i.title.toLowerCase() === tags.toLowerCase())
-                    return i.title.toLowerCase() === tags.toLowerCase()
-                }));
+                : data.filter((item) => item.tags.some(i =>
+                    i.name && i.name.toLowerCase() === tags));
             setItems(filteredItems);
         }
     }, [tags, data, isFetching, isSuccess]);
 
     if (error) {
         console.log(error)
-        return <h1>Unknown error</h1>
+        return <h1>Не удалось связаться с сервером</h1>
     }
     return (
         <>
