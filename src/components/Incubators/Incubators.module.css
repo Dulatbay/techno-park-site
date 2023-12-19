@@ -1,10 +1,12 @@
 .incubators {
     width: 100%;
     height: auto;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    top: 10vh;
 }
 
 .container {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -54,20 +56,31 @@
 }
 
 .image__wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: .5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align items horizontally */
+    gap: 20px; /* Space between items */
 }
 
 .image {
-    width: 450px;
+    flex: 0 0 450px; /* Don't grow, don't shrink, start at 450px width */
     height: 350px;
-    cursor: zoom-in;
 }
+
 
 .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+@media (max-width: 1145px) {
+    .container {
+        max-width: 560px;
+    }
+    .image {
+        flex: 0 0 300px; /* Don't grow, don't shrink, start at 450px width */
+        height: 250px;
+    }
 }

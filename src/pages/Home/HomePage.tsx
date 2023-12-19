@@ -1,8 +1,6 @@
 import './Home.module.css'
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
-// @ts-ignore
-import React from "react";
-import styles from "../OFE/OFE.module.css";
+import styles from "../Home/Home.module.css";
 import {OurMission} from "../../components/OurMission/OurMission.tsx";
 import {Departments} from "../../components/Departments/Departments.tsx";
 import {OurTeam} from "../../components/OurTeam/OutTeam.tsx";

@@ -40,6 +40,11 @@
     width: 80px;
     overflow: hidden;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.image:hover{
+    filter: brightness(1.2) contrast(1.2);
 }
 
 .image img{

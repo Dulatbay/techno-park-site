@@ -3,26 +3,16 @@ import { NewsItem } from './NewsItem.tsx';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './News.module.css';
+import {NewsArticle} from "../../services/technoHubApi.ts";
 
-interface NewsItem {
-    img: string;
-    title: string;
-    categories: string[];
-    createdAt: string;
-    content: string;
-}
+
 
 interface NewsGridProps {
-    items: NewsItem[];
+    items: NewsArticle[];
     category: string;
 }
 
 export const NewsGrid: React.FC<NewsGridProps> = ({ items }) => {
-    // Filter items based on the selected category
-    // const filteredItems = category === 'all'
-    //     ? items
-    //     : items.filter((item) => item.categories.includes(category.toLowerCase()));
-
     return (
         <div className={styles.news_grid}>
             {items.map((item, i) => (

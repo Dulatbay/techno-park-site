@@ -83,6 +83,9 @@
 
 .news_grid {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--index);
     width: 100%;
     height: 100%;
     max-width: 1200px;
@@ -90,9 +93,7 @@
 }
 
 .article {
-    background: #fff;
     width: 400px;
-    height: 525px;
     border-radius: 8px;
     overflow: hidden;
     text-decoration: none;
@@ -172,6 +173,7 @@
 
 .article_image img {
     position: absolute;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }

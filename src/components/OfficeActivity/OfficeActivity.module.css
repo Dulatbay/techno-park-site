@@ -1,84 +1,79 @@
-.office__activity {
-    width: 100%;
-    height: auto;
-}
-
-.office__activity_inner {
-    padding: 90px 0;
-}
-
-.card__line_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.card__line {
-    width: 1060px;
-    height: 1px;
-    background-color: #052555;
-    opacity: 0.1;
-}
-
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 7vh;
+    padding-top: 7vh;
 }
 
-.office__activity_title {
-    text-align: center;
-    margin-bottom: 90px;
-}
-
-.title__span_1 {
-    margin-bottom: 20px;
-}
-
-.title__span_1 span {
+.title{
+    color: rgb(5, 37, 85);
     font-size: 42px;
-    line-height: 1.23;
-    font-weight: 600;
-    color: rgb(5, 37, 85);
+    font-weight: 700;
+    text-align: center;
 }
 
-.title__span_2 span {
+.directions{
+    margin-top: 12px;
+    margin-bottom: 48px;
+    text-align: center;
+    color: rgb(5, 37, 85);
     font-size: 24px;
-    line-height: 1.5;
     font-weight: 300;
-    color: rgb(5, 37, 85);
 }
 
-.office__activity_card {
+
+.items{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 45px 0;
+    flex-direction: column;
+    gap: 7vh;
 }
 
-.card_text_1 {
-    width: 260px;
+.item{
+    display: flex;
+    gap: 15px;
 }
 
-.card_text_1 span {
+.item_title{
     font-size: 24px;
-    line-height: 1.35;
-    font-weight: 600;
     color: rgb(5, 37, 85);
+    font-weight: 600;
+    min-width: 300px;
 }
 
-.card_text_2 p span {
+.item_description{
     font-size: 20px;
-    line-height: 1.55;
     font-weight: 300;
     color: rgb(5, 37, 85);
 }
 
-.card_text_2 {
-    text-align: left;
-    width: 760px;
+.divider {
+    height: 1px;
+    background: #052555;
+    opacity: .1;
 }
 
-.office__activity_cards {
-    width: 1060px;
+.item_description ul{
+    list-style-type: lower-latin;
+    margin-left: -35px;
+}
+
+
+@media (max-width: 1145px) {
+    .item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divider{
+        align-self: stretch;
+    }
+
+    .items{
+        margin: auto;
+        max-width: 560px;
+
+        align-items: center;
+        justify-content: center;
+    }
 }
