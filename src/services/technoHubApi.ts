@@ -14,7 +14,7 @@ interface Tag {
     name: string;
 }
 
-export const baseUrl = "http://localhost:8080/"
+export const baseUrl = "https://sdutechnopark.kz/api/v1"
 
 export const technoHubApi = createApi({
     reducerPath: 'technoHubApi',

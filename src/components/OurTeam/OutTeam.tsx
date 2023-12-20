@@ -81,7 +81,7 @@ export const OurTeam = () => {
                                              onClick={() => {
                                                  const item: item = {
                                                      name: "Толыбай Бекжан",
-                                                     imageUrl: "/image/Толыбай%20Бекжан.jpeg",
+                                                     imageUrl: "/image/Bekzhan.jpeg",
                                                      mail: "bekzhan.tolybay@sdu.edu.kz",
                                                      mailLink: "mailto:bekzhan.tolybay@sdu.edu.kz",
                                                      information: "Директор департамента корпоративного развития,",
@@ -112,7 +112,7 @@ export const OurTeam = () => {
                                                 <div className={`${styles.ourTeam__card__box__content__author}`}>
                                                     <div className={`${styles.content__author_img}`}>
                                                         <img
-                                                            src="/image/Толыбай%20Бекжан.jpeg"
+                                                            src="/image/Bekzhan.jpeg"
                                                             alt="siuu" style={{borderRadius: "50%"}}/>
                                                     </div>
                                                     <div className={`${styles.content__author_information}`}>
