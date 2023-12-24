@@ -52,11 +52,16 @@
     opacity: .1;
 }
 
-.item_description ul{
+.item_description ul {
     list-style-type: lower-latin;
     margin-left: -35px;
 }
 
+.item_description * {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(5, 37, 85);
+}
 
 @media (max-width: 1200px) {
     .item{

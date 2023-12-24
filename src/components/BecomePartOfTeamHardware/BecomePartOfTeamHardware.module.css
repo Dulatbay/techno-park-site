@@ -84,7 +84,7 @@
 
 .inputInfo textarea{
     width: 90%;
-    height: 13%;
+    min-height: 50px;
     border: none;
     border-bottom: 1px solid #052555;
     padding-top: 10px;

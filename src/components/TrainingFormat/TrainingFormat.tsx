@@ -16,7 +16,7 @@ export const TrainingFormat = () => {
                 </p>
             </div>
             {/*<div className={`${styles.imgBox}`}>*/}
-            <img className={`${styles.img}`} alt={''} src={'public/image/courses-training-format.png'}/>
+            <img className={`${styles.img}`} alt={''} src={'/image/courses-training-format.png'}/>
             {/*</div>*/}
         </div>
     );

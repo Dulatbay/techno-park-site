@@ -14,7 +14,7 @@ export const EnactusKazakhstan = () => {
                     Преподаватели и бизнес-партнеры Enactus направляют студентов и становятся наставниками команд.
                 </p>
             </div>
-            <img alt={''} src={'public/image/enactus-kazakhstan.png'} loading='lazy'/>
+            <img alt={''} src={'/image/enactus-kazakhstan.png'} loading='lazy'/>
         </div>
     );
 };

@@ -17,7 +17,7 @@ function OurGuests() {
                                     className={`${styles.card__image_wrapper}`}
                                 >
                                     <img
-                                        src="https://thumb.tildacdn.com/tild3730-3063-4365-a236-623362303130/-/resize/360x/-/format/webp/image.png"
+                                        src="/image/guest_photos/guest_1.png"
                                         alt="Асхат Солтанов"
                                     />
                                 </div>
@@ -52,7 +52,7 @@ function OurGuests() {
                                     className={`${styles.card__image_wrapper}`}
                                 >
                                     <img
-                                        src="https://thumb.tildacdn.com/tild6130-6637-4436-b833-653136346237/-/resize/432x/-/format/webp/image.png"
+                                        src="/image/guest_photos/guest_2.png"
                                         alt="Жасулан Лес"
                                     />
                                 </div>
@@ -82,7 +82,7 @@ function OurGuests() {
                                     className={`${styles.card__image_wrapper}`}
                                 >
                                     <img
-                                        src="https://thumb.tildacdn.com/tild3139-3132-4432-b634-623932353833/-/resize/360x/-/format/webp/image.png"
+                                        src="/image/guest_photos/guest_3.png"
                                         alt="Дәурен Мұратханұлы"
                                     />
                                 </div>

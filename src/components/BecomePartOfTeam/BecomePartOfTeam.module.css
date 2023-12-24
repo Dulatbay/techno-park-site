@@ -1,11 +1,11 @@
-.becomePart{
+.becomePart {
     width: 100%;
     height: 100vh;
     display: flex;
     background-color: white;
 }
 
-.image{
+.image {
     width: 42%;
     height: 100vh;
     background-position: center;
@@ -24,7 +24,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.inputInfo{
+.inputInfo {
     width: 58%;
     height: 100%;
     display: flex;
@@ -37,15 +37,15 @@
     gap: 5vh;
 }
 
-.inputInfo h1{
+.inputInfo h1 {
     color: #052555;
-    font-family: 'TildaSans',Arial,sans-serif;
+    font-family: 'TildaSans', Arial, sans-serif;
     font-weight: 600;
     font-size: 40px;
 }
 
 
-.input{
+.input {
     width: 90%;
     height: 50px;
     border: none;
@@ -53,93 +53,96 @@
     outline: none;
 }
 
-.radios{
+.radios {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
 
-.radios label{
+.radios label {
     display: flex;
     align-items: center;
     color: #052555;
     font-size: 20px;
-    font-family: 'TildaSans',Arial,sans-serif;
+    font-family: 'TildaSans', Arial, sans-serif;
     font-weight: 300;
 }
 
-.radioInput{
+.radioInput {
     width: 13px;
     height: 13px;
     transform: scale(1.5);
     background-color: #052555;
 }
 
-.radios label span{
+.radios label span {
     font-size: 15px;
     padding-left: 10px;
 }
 
-.textareaSpan{
+.textareaSpan {
     color: #052555;
     font-size: 20px;
-    font-family: 'TildaSans',Arial,sans-serif;
+    font-family: 'TildaSans', Arial, sans-serif;
     font-weight: 300;
 }
 
-.inputInfo textarea{
+.inputInfo textarea {
     width: 90%;
-    height: 13%;
+    min-height: 50px;
     border: none;
     border-bottom: 1px solid #052555;
     padding-top: 10px;
     outline: none;
 }
 
-.inputInfo button{
+.inputInfo button {
     width: 200px;
     min-height: 60px;
     border-radius: 40px;
     border: none;
     background-color: #052555;
     color: #ffffff;
-    font-family: 'TildaSans',Arial,sans-serif;
+    font-family: 'TildaSans', Arial, sans-serif;
     font-weight: 700;
     margin-top: 40px;
 }
 
 
-@media (max-width: 1000px){
-    .becomePart{
+@media (max-width: 1000px) {
+    .becomePart {
         height: 100%;
         flex-direction: column;
-        padding: 0 20px 20px 20px;
         gap: 5vh;
     }
 
-    .inputInfo{
+    .inputInfo {
         width: 100%;
         height: 100vh;
-        padding: 0;
         gap: 2vh;
+        padding: 0 20px 20px 20px;
     }
-    .inputInfo h1{
+
+    .inputInfo h1 {
         font-size: 30px;
         width: 100%;
         padding-top: 10px;
     }
-    .image{
+
+    .image {
         width: 100%;
     }
 
-    .input{
+    .input {
         width: 100%;
     }
-    .inputInfo textarea{
+
+    .inputInfo textarea {
         width: 100%;
     }
-    .inputInfo button{
+
+    .inputInfo button {
         padding: 0;
         margin-top: 40px;
     }

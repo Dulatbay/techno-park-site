@@ -44,49 +44,49 @@ const Incubators: React.FC = () => {
                 <div className={`${styles.image__wrapper}`}>
                     <div className={`${styles.image}`}>
                         <img
-                            src='../../../public/image/incubator_photos/photo_1.jpg'
+                            src='/image/incubator_photos/photo_1.jpg'
                             alt="Photo1"/>
                     </div>
 
                     <div className={`${styles.image}`}>
                         <img
-                            src='../../../public/image/incubator_photos/photo_2.jpeg'
+                            src='/image/incubator_photos/photo_2.jpeg'
                             alt="Photo2"/>
                     </div>
 
                     <div className={`${styles.image}`}>
                         <img
-                            src='../../../public/image/incubator_photos/photo_3.jpeg'
+                            src='/image/incubator_photos/photo_3.jpeg'
                             alt="Photo3"/>
                     </div>
 
                     <div className={`${styles.image}`}>
                         <img
-                            src='../../../public/image/incubator_photos/photo_4.jpg'
+                            src='/image/incubator_photos/photo_4.jpg'
                             alt="Photo4"/>
                     </div>
 
                     <div className={`${styles.image}`}>
                         <img
-                            src='../../../public/image/incubator_photos/photo_5.jpg'
+                            src='/image/incubator_photos/photo_5.jpg'
                             alt="Photo4"/>
                     </div>
 
                     <div className={`${styles.image}`}>
                         <img
-                            src='../../../public/image/incubator_photos/photo_6.jpeg'
+                            src='/image/incubator_photos/photo_6.jpeg'
                             alt="Photo4"/>
                     </div>
 
                     <div className={`${styles.image}`}>
                         <img
-                            src='../../../public/image/incubator_photos/photo_7.jpg'
+                            src='/image/incubator_photos/photo_7.jpg'
                             alt="Photo4"/>
                     </div>
 
                     <div className={`${styles.image}`}>
                         <img
-                            src='../../../public/image/incubator_photos/photo_8.jpg'
+                            src='/image/incubator_photos/photo_8.jpg'
                             alt="Photo4"/>
                     </div>
                 </div>

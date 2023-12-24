@@ -1,7 +1,7 @@
-name: technopark
+name: technopark-docker-compose
 services:
   app:
-    image: technopark
+    image: techno-park-site
     expose:
       - '5000'
     environment:
