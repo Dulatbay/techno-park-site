@@ -1,12 +1,15 @@
 import NewsCategory from "./NewsCategory.tsx";
 import {NewsGrid} from "./NewsGrid.tsx";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import styles from './News.module.css';
 
 
-const items = [
+const items  = [
     {
-
+        image_url: "/public/imagePath",
+        title: 'title',
+        created_at: '23.07.2023',
+        content: 'content'
     }
 ]
 
