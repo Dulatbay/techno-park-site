@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react';
 import styles from './News.module.css';
-import {useGetAllTagsQuery} from "../../services/technoHubApi.ts";
+import React from "react";
 
 interface MenuProps {
     active: number;
@@ -8,23 +7,21 @@ interface MenuProps {
     setCategory: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const NewsCategory: React.FC<MenuProps> = ({active, setActive, setCategory}) => {
-    const {data, isError} = useGetAllTagsQuery()
-    const [links, setLinks] = useState<typeof data>(undefined)
 
-    useEffect(() => {
-        if (!isError && data?.length) {
-            setLinks([{id: 0, name: "All"}, ...data])
-        }
-    }, [data, isError])
+const data = [
+    {
+        id: 1,
+        name: 'Software'
+    }
+]
+
+const NewsCategory: React.FC<MenuProps> = ({active, setActive, setCategory}) => {
 
     const onClick = (id: number, value: string) => {
         setActive(id);
         setCategory(value);
     };
 
-    if (isError)
-        return <h1>Не удалось свзязаться с сервером</h1>
 
     return (
         <>
@@ -33,7 +30,7 @@ const NewsCategory: React.FC<MenuProps> = ({active, setActive, setCategory}) => 
                     <div className={`${styles.newsCategory__inner}`}>
                         <nav className={`${styles.menu}`}>
                             <ul>
-                                {links?.map((link) => (
+                                {data?.map((link) => (
                                     <li
                                         key={link.id}
                                         className={`${styles[active === link.id ? "active" : "inactive"]}`}
