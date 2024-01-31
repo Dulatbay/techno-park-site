@@ -6,7 +6,7 @@ import styles from './News.module.css';
 
 const items  = [
     {
-        image_url: "/public/imagePath",
+        image_url: "",
         title: 'title',
         created_at: '23.07.2023',
         content: 'content'

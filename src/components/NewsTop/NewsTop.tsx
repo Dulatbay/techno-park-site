@@ -5,6 +5,22 @@ const data = [
     {
         id: 1,
         name: 'Software'
+    },
+    {
+        id: 2,
+        name: 'Hardware'
+    },
+    {
+        id: 3,
+        name: 'Проекты'
+    },
+    {
+        id: 4,
+        name: 'События'
+    },
+    {
+        id: 5,
+        name: 'Достижения'
     }
 ]
 

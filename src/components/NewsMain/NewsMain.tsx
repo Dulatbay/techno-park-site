@@ -33,7 +33,7 @@ export const NewsMain = ({imageUrl, title, description, date, genre}: props) => 
                     <h5>{title}</h5>
                     <p>{description}</p>
                     <div className={`${styles.contentBottom}`}>
-                        <span>{formatDate(date)}</span>
+                        <span>{date}</span>
                         {genre && genre.map((item, index) => (
                             <span key={index}>{item}</span>
                         ))}

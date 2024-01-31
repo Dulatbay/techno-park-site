@@ -3,6 +3,7 @@ import OurGuests from "../../components/OurGuests/OurGuests.tsx";
 import {HeaderImage} from "../../components/HeaderImage/HeaderImage.tsx";
 import OfficeActivity from "../../components/OfficeActivity/OfficeActivity.tsx";
 import Incubators from "../../components/Incubators/Incubators.tsx";
+import Contacts from "../../components/Contacts/Contacts.tsx";
 
 const imageUrl = '/image/ofe-page-header.jpeg'
 const title = "Офис предпринимательства"
@@ -21,6 +22,7 @@ function EntrepreneurshipOffice() {
                 <OurGuests/>
                  {/*<Slider />*/}
                 <Incubators/>
+                <Contacts/>
             </div>
         </>
     );
