@@ -1,9 +1,8 @@
 import React from 'react';
-import { NewsItem } from './NewsItem.tsx';
+import {NewsArticle, NewsItem} from './NewsItem.tsx';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './News.module.css';
-import {NewsArticle} from "../../services/technoHubApi.ts";
 
 
 

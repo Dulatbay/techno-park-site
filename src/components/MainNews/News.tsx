@@ -4,6 +4,12 @@ import {useEffect, useState} from "react";
 import styles from './News.module.css';
 
 
+const items = [
+    {
+
+    }
+]
+
 export const News = () => {
     const [active, setActive] = useState(0);
     const [tags, setTags] = useState("all");
@@ -20,7 +26,7 @@ export const News = () => {
                         </div>
                     </div>
 
-                    <div className={`${styles.news__blog}`} id={"newsBlog"}>
+                    <div id={"newsBlog"}>
                         <NewsCategory active={active} setActive={setActive} setCategory={setTags}/>
                         <NewsGrid items={items} category={tags}/>
                     </div>
