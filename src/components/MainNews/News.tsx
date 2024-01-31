@@ -2,28 +2,12 @@ import NewsCategory from "./NewsCategory.tsx";
 import {NewsGrid} from "./NewsGrid.tsx";
 import {useEffect, useState} from "react";
 import styles from './News.module.css';
-import {NewsArticle, useGetAllBlogsQuery} from "../../services/technoHubApi.ts";
 
 
 export const News = () => {
     const [active, setActive] = useState(0);
     const [tags, setTags] = useState("all");
-    const {data, error, isFetching, isSuccess} = useGetAllBlogsQuery()
-    const [items, setItems] = useState<NewsArticle[]>([]);
-    useEffect(() => {
-        if (data != undefined && !isFetching && isSuccess) {
-            const filteredItems = tags === 'all'
-                ? data
-                : data.filter((item) => item.tags.some(i =>
-                    i.name && i.name.toLowerCase() === tags));
-            setItems(filteredItems);
-        }
-    }, [tags, data, isFetching, isSuccess]);
 
-    if (error) {
-        console.log(error)
-        return <h1>Не удалось связаться с сервером</h1>
-    }
     return (
         <>
             <div className={`${styles.news}`}>

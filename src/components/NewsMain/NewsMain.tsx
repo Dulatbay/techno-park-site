@@ -1,5 +1,4 @@
 import styles from './NewsMain.module.css';
-import {baseUrl} from "../../services/technoHubApi.ts";
 
 interface props {
     imageUrl: string,
@@ -27,7 +26,7 @@ export const NewsMain = ({imageUrl, title, description, date, genre}: props) => 
             <div className={`${styles.container}`}>
 
                 <div>
-                    <img className={`${styles.img}`} alt={''} src={baseUrl + 'files/' + imageUrl}/>
+                    <img className={`${styles.img}`} alt={''} src={imageUrl}/>
                 </div>
 
                 <div className={`${styles.content}`}>

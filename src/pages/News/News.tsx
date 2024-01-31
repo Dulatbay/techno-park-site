@@ -2,19 +2,27 @@ import {NewsTop} from "../../components/NewsTop/NewsTop.tsx";
 import {NewsMain} from "../../components/NewsMain/NewsMain.tsx";
 import styles from './News.module.css'
 import React, {useEffect, useState} from "react";
-import {useGetAllBlogsQuery} from "../../services/technoHubApi.ts";
 
+
+const data = [
+    {
+        id: 1,
+        image_url: '/public/pathToImage.png',
+        title: "title",
+        tags: [
+            {
+                name: 'software'
+            }
+        ],
+        content: "content",
+        created_at: "27.07.2023",
+
+    }
+]
 
 export const News = () => {
     const [activeCategory, setActiveCategory] = useState('all');
-    const {data, isError} = useGetAllBlogsQuery()
-    const [items, setItems] = useState<typeof data>(undefined)
-
-    useEffect(() => {
-        if (!isError && data) {
-            setItems(data)
-        }
-    }, [data, isError]);
+    const [items, setItems] = useState(data)
 
 
     useEffect(() => {
