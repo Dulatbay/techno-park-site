@@ -15,6 +15,7 @@ export const OurOffice = () => {
                         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22].map(i =>
                             <div
                                 className={styles.image}
+                                key={i}
                             >
                                 <img
                                     loading={"lazy"}
@@ -45,7 +46,9 @@ export const OurOffice = () => {
                     <li>Кабинет директора</li>
                     <li>IOT, ML лаборатории (в процессе)</li>
                 </ul>
-                <div className="description_text">Офис открыт для старших и младших ассистентов, студентов по направлению beta career и студентов обучающихся в Технопарке.</div>
+                <div className="description_text">Офис открыт для старших и младших ассистентов, студентов по
+                    направлению beta career и студентов обучающихся в Технопарке.
+                </div>
             </div>
         </div>
     );

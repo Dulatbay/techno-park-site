@@ -1,15 +1,9 @@
-.aboutTechnoParkPage{
-    padding: 0 15px;
-}
-
-
 .chronologyComponent * {
     color: black;
 }
 
 .chronologyComponent {
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -17,16 +11,16 @@
 }
 
 .chronologyComponentContent h3 {
-    font-size: 34px;
+    font-size: 48px;
     font-weight: 600;
 }
 
 .chronologyComponentContent div span {
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .chronologyComponentContent div strong {
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .chronologyComponentContent div {

@@ -90,7 +90,6 @@ export const News = () => {
 
     useEffect(() => {
         setItems(data?.filter(i => i.tags.some(j => activeCategory === 'all' ? true : activeCategory.toLowerCase() === j.name.toLowerCase())))
-        console.log(items, activeCategory)
     }, [data, activeCategory]);
 
 

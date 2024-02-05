@@ -1,5 +1,4 @@
 import styles from './HeaderImage.module.css';
-import {LazyLoadImage} from 'react-lazy-load-image-component';
 
 interface props {
     imageUrl: string,
@@ -32,16 +31,7 @@ export const HeaderImage = ({imageUrl, title, description}: props) => {
 
     return (
         <div className={styles.parallaxContainer}>
-
-
-            <div className={styles.parallaxImage}>
-                <LazyLoadImage
-                    src={imageUrl}
-                    width={"100%"}
-                    effect={'blur'}
-                />
-            </div>
-
+            <div className={styles.parallaxImage} style={{backgroundImage: `url(${imageUrl})`}}></div>
             <div className={styles.parallaxContent}>
                 <h1>{title}</h1>
                 <p>{description}</p>

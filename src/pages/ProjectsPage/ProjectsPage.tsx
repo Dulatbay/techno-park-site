@@ -4,7 +4,6 @@ import styles from './ProjectsPage.module.css';
 
 
 export const ProjectsPage = () => {
-    console.log('created ProjectsPage');
 
     const imageUrl = '/image/projects-page-header.jpg';
     const title = 'Проекты';

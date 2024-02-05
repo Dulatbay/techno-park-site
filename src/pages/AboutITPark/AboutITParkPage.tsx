@@ -23,7 +23,6 @@ const getSection = (imageUrl: string, title: string, description: string, redire
 }
 
 export const AboutITParkPage = () => {
-    console.log("created AboutITParkPage")
     const imageUrl = '/image/about-it-park-page-header.jpg'
     const title = "SDU IT Park"
     const description = "SDU IT Park - товарищество с ограниченной ответственностью, единственным учредителем которого является университет СДУ.";
