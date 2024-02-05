@@ -113,7 +113,7 @@ export const OurTeam = () => {
                                                     <div className={`${styles.content__author_img}`}>
                                                         <img
                                                             src="/image/Bekzhan.jpeg"
-                                                            alt="siuu" style={{borderRadius: "50%"}}/>
+                                                            alt="" style={{borderRadius: "50%"}}/>
                                                     </div>
                                                     <div className={`${styles.content__author_information}`}>
                                                         <div className={`${styles.content__author_information_name}`}>
@@ -287,6 +287,16 @@ export const OurTeam = () => {
                                                         гостевых лекций.
                                                     </div>
                                                 </div>
+                                                <div className={`${styles.ourTeam__card__box__content__dots__wrapper}`}>
+                                                    <div className={`${styles.ourTeam__card__box__content__dots}`}>
+                                                        <span
+                                                            className={`${styles.ourTeam__card__box__content__dot}`}></span>
+                                                        <span
+                                                            className={`${styles.ourTeam__card__box__content__dot}`}></span>
+                                                        <span
+                                                            className={`${styles.ourTeam__card__box__content__dot}`}></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -335,6 +345,16 @@ export const OurTeam = () => {
                                                         Контроль и мониторинг проектов в Технопарк.
                                                         Преподаватель курса Data Science по программе Techorda от
                                                         AstanaHUB
+                                                    </div>
+                                                </div>
+                                                <div className={`${styles.ourTeam__card__box__content__dots__wrapper}`}>
+                                                    <div className={`${styles.ourTeam__card__box__content__dots}`}>
+                                                        <span
+                                                            className={`${styles.ourTeam__card__box__content__dot}`}></span>
+                                                        <span
+                                                            className={`${styles.ourTeam__card__box__content__dot}`}></span>
+                                                        <span
+                                                            className={`${styles.ourTeam__card__box__content__dot}`}></span>
                                                     </div>
                                                 </div>
                                             </div>
