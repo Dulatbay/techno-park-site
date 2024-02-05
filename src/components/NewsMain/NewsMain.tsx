@@ -8,16 +8,7 @@ interface props {
     genre: string[]
 }
 
-function formatDate(isoDateString: string) {
-    const date = new Date(isoDateString);
 
-    // Extracting day, month, and year
-    const day = String(date.getDate()).padStart(2, '0');
-    const month = String(date.getMonth() + 1).padStart(2, '0'); // Adding 1 because months are zero-indexed
-    const year = date.getFullYear();
-
-    return `${day}.${month}.${year}`;
-}
 
 export const NewsMain = ({imageUrl, title, description, date, genre}: props) => {
 
