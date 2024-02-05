@@ -8,7 +8,6 @@ import styles from './News.module.css';
 
 interface NewsGridProps {
     items: NewsArticle[];
-    category: string;
 }
 
 export const NewsGrid: React.FC<NewsGridProps> = ({ items }) => {

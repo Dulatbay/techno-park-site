@@ -41,6 +41,10 @@ export const NewsTop = ({setActiveCategory}: {
                 <div className={`${styles.newsCategory__inner}`}>
                     <nav className={`${styles.menu}`}>
                         <ul>
+                            <li className={`${styles[activeCategoryIndex === 0 ? "active" : "inactive"]}`}
+                                onClick={() => onClick(0, "all")}>
+                                <a href="#">Все</a>
+                            </li>
                             {data?.map((link) => (
                                 <li
                                     key={link.id}
