@@ -2,55 +2,58 @@
 /*    position: relative !important;*/
 /*}*/
 
-
 .navbar,
 .navbar-default {
-    background-image: linear-gradient(to bottom, #052555 0, #052555 100%) !important;
+	background-image: linear-gradient(
+		to bottom,
+		#052555 0,
+		#052555 100%
+	) !important;
 }
 
-.navbar-brand{
-    font-weight: 400;
+.navbar-brand {
+	font-weight: 400;
 }
 .navbar {
-    --bs-navbar-color: white !important;
-    --bs-navbar-brand-color: white !important;
-    --bs-navbar-hover-color: rgba(255, 255, 255, 0.77) !important;
-    --bs-navbar-brand-hover-color: rgba(255, 255, 255, 0.77) !important;
-    --bs-navbar-brand-font-size: 24px !important;
-    --bs-navbar-font-size: 16px !important;
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3Cpath%20stroke='white'%20stroke-linecap='round'%20stroke-miterlimit='10'%20stroke-width='2'%20d='M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E") !important;
-    --bs-navbar-active-color: rgba(255, 255, 255, 0.7) !important;
+	--bs-navbar-color: white !important;
+	--bs-navbar-brand-color: white !important;
+	--bs-navbar-hover-color: rgba(255, 255, 255, 0.77) !important;
+	--bs-navbar-brand-hover-color: rgba(255, 255, 255, 0.77) !important;
+	--bs-navbar-brand-font-size: 24px !important;
+	--bs-navbar-font-size: 16px !important;
+	--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3Cpath%20stroke='white'%20stroke-linecap='round'%20stroke-miterlimit='10'%20stroke-width='2'%20d='M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E") !important;
+	--bs-navbar-active-color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .pending {
-    color: black !important;
-    text-decoration: none !important;
+	color: black !important;
+	text-decoration: none !important;
 }
 
-.news-pending{
-    color: white !important;
-    text-decoration: none !important;
+.news-pending {
+	color: white !important;
+	text-decoration: none !important;
 }
 
 .active {
-    color: #1332ad !important;
-    text-decoration: none !important;
-    font-weight: 600;
-    font-size: 1.04em;
+	color: #1332ad !important;
+	text-decoration: none !important;
+	font-weight: 600;
+	font-size: 1.04em;
 }
 
-.news-active{
-    color: #ffffff !important;
-    text-decoration: none !important;
-    font-weight: 600;
-    font-size: 1.04em;
+.news-active {
+	color: #ffffff !important;
+	text-decoration: none !important;
+	font-weight: 600;
+	font-size: 1.04em;
 }
 
-.navbar-nav{
-    border-radius: 7px;
-    --bs-nav-link-color: white !important;
+.navbar-nav {
+	border-radius: 7px;
+	--bs-nav-link-color: white !important;
 }
 
-.navbar-toggler{
-    border: 1px white solid!important;
+.navbar-toggler {
+	border: 1px white solid !important;
 }

@@ -9,9 +9,7 @@ import authStore from '../../stores/auth.store'
 import './HeaderTop.css'
 
 const HeaderTop = observer(() => {
-	const [isAuth, setIsAuth] = useState(
-		localStorage.getItem('isAuth') === 'true'
-	)
+	const [_, setIsAuth] = useState(localStorage.getItem('isAuth') === 'true')
 
 	useEffect(() => {
 		const handleStorageChange = () => {
@@ -19,6 +17,8 @@ const HeaderTop = observer(() => {
 		}
 
 		window.addEventListener('storage', handleStorageChange)
+
+		setIsAuth(localStorage.getItem('isAuth') === 'true')
 
 		return () => {
 			window.removeEventListener('storage', handleStorageChange)

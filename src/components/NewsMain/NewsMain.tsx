@@ -67,7 +67,7 @@ export const NewsMain = ({
 						<img
 							className={styles.img}
 							alt={title}
-							src={`${import.meta.env.VITE_API_URL}/files/${imageUrl}`}
+							src={`http://91.243.71.68:8000/files/${imageUrl}`}
 						/>
 					) : (
 						<p>{error || 'Загрузка изображения...'}</p>
