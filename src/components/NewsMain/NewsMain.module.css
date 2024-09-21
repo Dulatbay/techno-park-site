@@ -1,66 +1,81 @@
-.newsMain{
-    width: 100%;
+.newsMain {
+	width: 100%;
+	position: relative;
 }
 
-.container{
-    margin: 0 auto;
-    width: 750px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+	margin: 0 auto;
+	width: 750px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-between; /* Keep content spaced properly */
+	align-items: flex-start; /* Align items to top */
+	align-items: center;
+	position: relative;
 }
 
-.img{
-    width: 200px;
-    height: 160px;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    margin-right: 40px;
+.img {
+	width: 200px;
+	height: 160px;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	margin-right: 40px;
 }
 
-
-.content h5{
-    font-size: var(--title-text-fz-sm);
-    font-family: 'TildaSans',Arial,sans-serif;
-    font-weight: 600;
-    color: #052555;
-    padding-bottom: 10px;
+.content {
+	flex-grow: 1;
 }
 
-.content p{
-    font-size: var(--text-fz-sm);
-    font-family: 'TildaSans',Arial,sans-serif;
-    color: #052555;
+.content h5 {
+	font-size: var(--title-text-fz-sm);
+	font-family: 'TildaSans', Arial, sans-serif;
+	font-weight: 600;
+	color: #052555;
+	padding-bottom: 10px;
 }
 
+.content p {
+	font-size: var(--text-fz-sm);
+	font-family: 'TildaSans', Arial, sans-serif;
+	color: #052555;
+}
 
-.contentBottom span{
-    font-size: 12px;
-    font-family: 'TildaSans',Arial,sans-serif;
-    font-weight: 300;
-    color: #052555;
-    padding-right: 20px;
+.contentBottom span {
+	font-size: 12px;
+	font-family: 'TildaSans', Arial, sans-serif;
+	font-weight: 300;
+	color: #052555;
+	padding-right: 20px;
 }
 
 .contentBottom {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
+.contentBottom .tag {
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: semibold;
+}
 
+@media (max-width: 800px) {
+	.container {
+		width: 70%;
+		flex-direction: column;
+	}
 
-@media (max-width: 1000px){
-    .container{
-        width: 70%;
-        flex-direction: column;
-    }
-
-    .img{
-        width: 100%;
-        height: 30%;
-        object-fit: contain;
-        padding-bottom: 30px;
-    }
+	.img {
+		width: 100%;
+		height: 30%;
+		object-fit: contain;
+		padding-bottom: 30px;
+	}
+}
+.deleteButtonContainer {
+	position: absolute;
+	bottom: -40px;
+	right: 10px; /* Помещаем кнопку в нижний левый угол */
 }
