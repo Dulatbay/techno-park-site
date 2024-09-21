@@ -1,41 +1,48 @@
 {
-  "name": "technopark",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite --host",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@reduxjs/toolkit": "^2.0.1",
-    "bootstrap": "^5.3.2",
-    "bootstrap-icons": "^1.11.2",
-    "localforage": "^1.10.0",
-    "match-sorter": "^6.3.1",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.10.0",
-    "react-dom": "^18.2.0",
-    "react-lazy-load-image-component": "^1.6.0",
-    "react-redux": "^9.0.4",
-    "react-router-dom": "^6.19.0",
-    "slick-carousel": "^1.8.1",
-    "sort-by": "^1.2.0",
-    "swiper": "^11.0.5"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.38",
-    "@types/react-dom": "^18.2.15",
-    "@types/react-lazy-load-image-component": "^1.6.3",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
-    "@vitejs/plugin-react": "^4.2.0",
-    "eslint": "^8.53.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.0"
-  }
+	"name": "technopark",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --host",
+		"build": "tsc && vite build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^2.0.1",
+		"antd": "^5.20.6",
+		"axios": "^1.7.7",
+		"bootstrap": "^5.3.2",
+		"bootstrap-icons": "^1.11.2",
+		"localforage": "^1.10.0",
+		"lucide-react": "^0.441.0",
+		"match-sorter": "^6.3.1",
+		"mobx": "^6.13.2",
+		"mobx-react-lite": "^4.0.7",
+		"react": "^18.2.0",
+		"react-bootstrap": "^2.10.0",
+		"react-dom": "^18.2.0",
+		"react-hook-form": "^7.53.0",
+		"react-lazy-load-image-component": "^1.6.0",
+		"react-redux": "^9.0.4",
+		"react-router-dom": "^6.19.0",
+		"slick-carousel": "^1.8.1",
+		"sort-by": "^1.2.0",
+		"swiper": "^11.0.5"
+	},
+	"devDependencies": {
+		"@types/node": "^22.5.5",
+		"@types/react": "^18.2.38",
+		"@types/react-dom": "^18.2.15",
+		"@types/react-lazy-load-image-component": "^1.6.3",
+		"@typescript-eslint/eslint-plugin": "^6.10.0",
+		"@typescript-eslint/parser": "^6.10.0",
+		"@vitejs/plugin-react": "^4.2.0",
+		"eslint": "^8.53.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.4",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.0"
+	}
 }
