@@ -4,8 +4,8 @@ import authStore from '../../stores/auth.store'
 import styles from './Register.module.css'
 
 export const Register: React.FC = () => {
-	const adminLogin = import.meta.env.VITE_ADMIN_LOGIN
-	const adminPassword = import.meta.env.VITE_ADMIN_PASSWORD
+	const adminLogin = 'technoparkAdmin2424'
+	const adminPassword = '53hKHOCAcWhLLxarTODf6fPqZBsK2xRZwyMMbleuYzzIAKX9Lk'
 
 	const [login, setLogin] = useState('')
 	const [password, setPassword] = useState('')
