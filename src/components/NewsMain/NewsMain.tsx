@@ -1,4 +1,4 @@
-import { Button, Popover } from 'antd'
+import { Button, Popover, Skeleton } from 'antd'
 import { useEffect, useState } from 'react'
 import { deletePost, deleteTagFromBlog } from '../../instances/blog-instance'
 import { getImageSrc } from '../../instances/file-instance'
@@ -27,6 +27,7 @@ export const NewsMain = ({
 	const [openPopoverIndex, setOpenPopoverIndex] = useState<number | null>(null)
 	const [imageSrc, setImageSrc] = useState<string>('')
 	const [error, setError] = useState<string | null>(null)
+	const [loading, setLoading] = useState(true)
 
 	useEffect(() => {
 		const fetchImage = async () => {
@@ -35,6 +36,8 @@ export const NewsMain = ({
 				setImageSrc(response.data)
 			} catch (error) {
 				setError('Не удалось загрузить изображение')
+			} finally {
+				setLoading(false)
 			}
 		}
 
@@ -63,11 +66,16 @@ export const NewsMain = ({
 		<div className={styles.newsMain}>
 			<div className={styles.container}>
 				<div className={styles.imgContainer}>
-					{imageSrc ? (
+					{loading ? (
+						<Skeleton.Image
+							style={{ width: '200px', height: '160px' }}
+							active
+						/>
+					) : imageSrc ? (
 						<img
 							className={styles.img}
 							alt={title}
-							src={`http://91.243.71.68:8000/files/${imageUrl}`}
+							src={`https://technopark-backend.sdutechnopark.kz/files/${imageUrl}`}
 						/>
 					) : (
 						<p>{error || 'Загрузка изображения...'}</p>

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const axiosInstance = axios.create({
-	baseURL: 'http://91.243.71.68:8000',
+	baseURL: 'https://technopark-backend.sdutechnopark.kz',
 	headers: {
 		'Content-Type': 'application/json',
 	},
