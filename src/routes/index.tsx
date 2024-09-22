@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import { AboutITParkPage } from '../pages/AboutITPark/AboutITParkPage.tsx'
 import { AboutTechnoParkPage } from '../pages/AboutTechnoPark/AboutTechnoParkPage.tsx'
 import { Courses } from '../pages/Courses/Courses.tsx'
@@ -13,7 +13,7 @@ import { ProjectsPage } from '../pages/ProjectsPage/ProjectsPage.tsx'
 import { Register } from '../pages/Register/Register.tsx'
 import { Software } from '../pages/Software/Software.tsx'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: '/',
 		element: <MainLayout />,
