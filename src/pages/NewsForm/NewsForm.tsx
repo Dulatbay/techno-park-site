@@ -5,6 +5,7 @@ import { Controller, FieldValues, useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import { createBlog } from '../../instances/blog-instance'
 import { getAllTagsWithBlogs } from '../../instances/tag-instance'
+import authStore from '../../stores/auth.store'
 import { ITag } from '../../types'
 import styles from './NewsForm.module.css'
 
@@ -40,8 +41,8 @@ const NewsForm = () => {
 	}, [])
 	useEffect(() => {
 		const isAuth = localStorage.getItem('isAuth')
-		if (isAuth !== 'true') {
-			navigate('/login')
+		if (!authStore.isAuth) {
+			navigate('/')
 		}
 	}, [navigate])
 

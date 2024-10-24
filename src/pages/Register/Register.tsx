@@ -4,21 +4,22 @@ import authStore from '../../stores/auth.store'
 import styles from './Register.module.css'
 
 export const Register: React.FC = () => {
-	const adminLogin = 'technoparkAdmin2424'
-	const adminPassword = '53hKHOCAcWhLLxarTODf6fPqZBsK2xRZwyMMbleuYzzIAKX9Lk'
-
 	const [login, setLogin] = useState('')
 	const [password, setPassword] = useState('')
 	const [error, setError] = useState('')
 	const navigate = useNavigate()
 
-	const handleSubmit = (event: React.FormEvent) => {
+	const handleSubmit = async (event: React.FormEvent) => {
 		event.preventDefault()
-		if (login === adminLogin && password === adminPassword) {
-			localStorage.setItem('isAuth', 'true')
-			authStore.login()
-			navigate('/news-form')
-		} else {
+		try {
+			await authStore.loginAction(login, password)
+
+			if (authStore.isAdmin()) {
+				navigate('/news-form')
+			} else {
+				navigate('/news')
+			}
+		} catch (error) {
 			setError('Wrong credentials')
 		}
 	}
