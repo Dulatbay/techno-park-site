@@ -26,7 +26,7 @@ const HeaderTop = observer(() => {
 	}, [])
 
 	const handleSignOut = () => {
-		authStore.logout()
+		authStore.logoutAction()
 		setIsAuth(false)
 	}
 
